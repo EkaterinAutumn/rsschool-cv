@@ -1,3 +1,123 @@
+.photo {
+    width: auto;
+    height: 300px;
+    border-radius: 50%;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo {
+    width: 50px;
+    height: auto;
+    background-color: #ecd4b0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #a4a5a6;
+}
+
+.year-class {
+    padding-left: 20px;
+    color: #a4a5a6;
+}
+
+.section {
+    width: 50%;
+    padding: 40px 20px;
+    line-height: 30px;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 body {
-    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
+    color: #a4a5a6;
+    background-color: #2b2c2c;
+}
+
+
+
+.title {
+    line-height: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.deleted {
+    width: 0;
+    color: #2b2c2c;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #a4a5a6;
+}
+
+
+
+.photo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-name {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 50px;
+    color: #ecd4b0;
+}
+
+.section-air {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.nav-list-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 30px;
+}
+
+.git {
+    height: 25px;
+    background-color: #ecd4b0;
+}
+
+.color-title {
+    color: #ecd4b0c7;
 }
