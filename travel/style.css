@@ -2,13 +2,23 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    margin: 0;
     padding: 0;
     background-color: white;
 }
 
+nav {
+    padding-right: 22px;
+}
+
+
 .body-wrapper {
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
     position: relative;
 }
@@ -56,16 +66,34 @@ body {
     height: 21px;
 }
 
-.marg {
-    padding-right: 42px;
+.link-header:hover {
+    color: #0D606F;
+    transition: 1s;
 }
 
 .nav-header {
     margin: 0;
-    padding: 0;
+    padding: 0 5px 0 0;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 42px;
+}
+
+.first-link {
+    width: 98px;
+}
+
+.second-link {
+    width: 105px;
+}
+
+.third-link {
+    width: 95px;
+}
+
+.last-link {
+    width: 103px;
 }
 
 .button {
@@ -82,6 +110,17 @@ body {
     color: #FFFFFF;
 }
 
+.button:hover {
+    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.5), 4px 4px 4px rgba(103, 188, 203, 0.5);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button:active {
+    background: #93cbd5;
+    transition: 0.5s;
+}
+
 h2 {
     font-family: 'Red Hat Text';
     font-style: normal;
@@ -95,11 +134,10 @@ h2 {
 
 .stories {
     max-width: 1440px;
-    background-image: url(img/Rectangle\ 33.jpg);
+    background-image: url(img/Rectangle33.jpg);
     background-position-y: 93px;
     background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center; */
+    background-size: contain;
     padding: 0 0 61px 0;
 }
 
@@ -189,6 +227,16 @@ h2 {
     padding: 0;
 }
 
+.button-4:hover {
+    box-shadow: 4px 4px 4px rgba(236, 102, 30, 0.5), 4px 4px 4px rgba(236, 102, 30, 0.5);
+    transition: 0.5s;
+}
+
+.button-4:active {
+    background: #93cbd5;
+    transition: 0.5s;
+}
+
 .link-next {
     font-family: 'Aleo';
     font-style: normal;
@@ -197,6 +245,18 @@ h2 {
     line-height: 24px;
     color: #0D606F;
     margin-top: -24px;
+}
+
+.link-next:hover {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+    margin-top: -24px;
+    box-shadow: 0 4px 4px rgba(236, 102, 30, 0.5), 0 4px 4px rgba(236, 102, 30, 0.5);
+    transition: 0.5s;
 }
 
 .preview {
@@ -213,11 +273,7 @@ h2 {
     font-size: 80px;
     line-height: 96px;
     color: #FFFFFF;
-    margin-bottom: 52px;
-}
-
-.main {
-    /* margin-bottom: -61px; */
+    margin-bottom: 32px;
 }
 
 .text-preview {
@@ -227,6 +283,7 @@ h2 {
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+    margin-bottom: 45px;
 }
 
 .text-action {
@@ -240,7 +297,8 @@ h2 {
     height: 95px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
-    padding: 32px 291px 41px 41px;
+    padding: 35px 291px 38px 41px;
+    border-width: 0;
 }
 
 .button-2 {
@@ -260,6 +318,16 @@ h2 {
     top: 18px;
 }
 
+.button-2:hover {
+    box-shadow: 4px 4px 4px rgba(236, 102, 30, 0.5), 4px 4px 4px rgba(236, 102, 30, 0.5);
+    transition: 0.5s;
+}
+
+.button-2:active {
+    background: #93cbd5;
+    transition: 0.5s;
+}
+
 .form {
     position: relative;
 }
@@ -270,11 +338,7 @@ h2 {
 }
 
 .text-action::-webkit-input-placeholder {
-    font-family: 'Aleo';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-weight: lighter;
     color: #F2785C;
 }
 
@@ -289,16 +353,19 @@ h2 {
     width: fit-content;
 }
 
+.step-2 {
+    padding-left: 66px;
+}
+
 .main-2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .svg-steps {
     width: 100px;
     height: 100px;
     margin: 0 auto;
-
 }
 
 .svg-text {
@@ -355,7 +422,7 @@ h2 {
     color: #FFFFFF;
     position: absolute;
     left: 15px;
-    bottom: 40px;
+    bottom: 43px;
 }
 
 .courusel {
@@ -376,7 +443,7 @@ h2 {
 .dots {
     display: flex;
     justify-content: center;
-    margin: 24px 0 40px 0;
+    margin: 21px 0 40px 0;
     gap: 10px;
 }
 
@@ -398,6 +465,16 @@ h2 {
     gap: 10px;
     margin: 0 auto 80px auto;
     padding: 0;
+}
+
+.button-3:hover {
+    box-shadow: 4px 4px 4px rgba(236, 102, 30, 0.5), 4px 4px 4px rgba(236, 102, 30, 0.5);
+    transition: 0.5s;
+}
+
+.button-3:active {
+    background: #93cbd5;
+    transition: 0.5s;
 }
 
 .style-footer {
@@ -434,6 +511,11 @@ h2 {
 }
 
 .logo-footer {
-    width: 30px;
-    height: 30px;
+    width: 33.65px;
+    height: 33.65px;
+}
+
+.logo-footer:hover {
+    transform: rotate(360deg);
+    transition: 1.5s;
 }
