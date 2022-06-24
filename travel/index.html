@@ -11,7 +11,8 @@
   <title>Travel Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Magra&family=Red+Hat+Text&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@400;700&family=Red+Hat+Text:wght@400;500&display=swap"
     rel="stylesheet">
 </head>
 
@@ -24,10 +25,10 @@
       </div>
       <nav>
         <ul class="nav-header">
-          <li><a href="#" class="link-header marg">How It Works</a></li>
-          <li><a href="#" class="link-header marg">Plan Your Trip</a></li>
-          <li><a href="#" class="link-header marg">Destinations</a></li>
-          <li><a href="#" class="link-header">Travel Stories</a></li>
+          <li class="first-link"><a href="#howitworks" class="link-header">How It Works</a></li>
+          <li class="second-link"><a href="#planyourtrip" class="link-header">Plan Your Trip</a></li>
+          <li class="third-link"><a href="#destinations" class="link-header">Destinations</a></li>
+          <li class="last-link"><a href="#travelstories" class="link-header">Travel Stories</a></li>
         </ul>
       </nav>
       <input type="button" value="Login" class="button">
@@ -40,19 +41,19 @@
           <h1 class="preview-title">Explore the beauty of the World</h1>
           <p class="text-preview">Receive personalized recommendations for countries, hotels, activities and more</p>
           <form name="action" method="get" class="form">
-            <input type="text" placeholder="What would you like to do?" class="text-action">
+            <input type="text" id="howitworks" placeholder="What would you like to do?" class="text-action">
             <input type="button" value="Start Planning" class="button-2">
           </form>
         </div>
       </section>
       <section class="steps">
-        <h2 class="steps-text">3 steps to the perfect trip</h2>
+        <h2 class="steps-text" id="planyourtrip">3 steps to the perfect trip</h2>
         <div class="main-2">
           <div class="step">
             <img src="img/bicycle.svg" alt="logo bicycle" class="svg-steps">
             <p class="svg-text">Tell us what you want to do</p>
           </div>
-          <div class="step">
+          <div class="step step-2">
             <img src="img/calculator.svg" alt="logo calculator" class="svg-steps">
             <p class="svg-text">Share us preferable dates</p>
           </div>
@@ -65,12 +66,12 @@
       <section class="destinations">
         <h2 class="destinations-text">popular destinations</h2>
         <div class="courusel">
-          <div class="courusel-content">
-            <div class="courusel-item"><img src="img/Rectangle 26.jpg" alt="Norway" class="foto-courusel"><span
+          <div class="courusel-content" id="destinations">
+            <div class="courusel-item"><img src="img/Rectangle23.jpg" alt="Norway" class="foto-courusel"><span
                 class="courusel-item-title">Norway</span></div>
-            <div class="courusel-item"><img src="img/Rectangle 24.jpg" alt="Japan" class="foto-courusel"><span
+            <div class="courusel-item"><img src="img/Rectangle24.jpg" alt="Japan" class="foto-courusel"><span
                 class="courusel-item-title">Japan</span></div>
-            <div class="courusel-item"><img src="img/Rectangle 25.jpg" alt="USA" class="foto-courusel"><span
+            <div class="courusel-item"><img src="img/Rectangle25.jpg" alt="USA" class="foto-courusel"><span
                 class="courusel-item-title">USA</span></div>
           </div>
           <div class="dots">
@@ -78,15 +79,15 @@
             <div class="dot dot-active"></div>
             <div class="dot"></div>
           </div>
-          <button class="button-3"><img src="img/arrow.svg"><span>Find More</span></button>
+          <button class="button-3"><img src="img/arrow.svg" alt="arrow"><span>Find More</span></button>
         </div>
       </section>
       <section class="stories">
         <h2 class="travel-text">travel stories</h2>
         <div class="stories-wrapper">
-          <div class="stories-content">
+          <div class="stories-content" id="travelstories">
             <div class="stories-item item-1">
-              <img src="img/Rectangle 29.jpg" alt="Thailand" class="foto-stories">
+              <img src="img/Rectangle29.jpg" alt="Thailand" class="foto-stories">
               <div class="stories-item-text"><span class="stories-item-title">10 Photos of Attractive Thailand</span>
                 <span class="stories-item-text-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod
@@ -99,7 +100,7 @@
               </div>
             </div>
             <div class="stories-item">
-              <img src="img/Rectangle 30.jpg" alt="Utah" class="foto-stories">
+              <img src="img/Rectangle30.jpg" alt="Utah" class="foto-stories">
               <div class="stories-item-text"><span class="stories-item-title">Canyonlands National Park, Utah</span>
                 <span class="stories-item-text-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod
@@ -114,7 +115,7 @@
               </div>
             </div>
             <div class="stories-item">
-              <img src="img/Rectangle 31.jpg" alt="Mountains" class="foto-stories">
+              <img src="img/Rectangle31.jpg" alt="Mountains" class="foto-stories">
               <div class="stories-item-text"><span class="stories-item-title">I left my heart in the Mountains!</span>
                 <span class="stories-item-text-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod
@@ -127,7 +128,7 @@
               </div>
             </div>
             <div class="stories-item">
-              <img src="img/Rectangle 32.jpg" alt="Car" class="foto-stories">
+              <img src="img/Rectangle32.jpg" alt="Car" class="foto-stories">
               <div class="stories-item-text"><span class="stories-item-title">The Longest journey in my life!</span>
                 <span class="stories-item-text-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod
@@ -141,7 +142,7 @@
             </div>
 
           </div>
-          <button class="button-4"><img src="img/arrow.svg"><span>See More</span></button>
+          <button class="button-4"><img src="img/arrow.svg" alt="arrow"><span>See More</span></button>
         </div>
       </section>
     </main>
@@ -152,11 +153,10 @@
         <p>All Rights Reserved © Travel Portal</p>
       </div>
       <ul class="link-footer">
-        <li><a href="https://github.com/EkaterinAutumn"><img src="img/youtube.svg" alt="logo_gitHub"
+        <li><a href="https://github.com/EkaterinAutumn"><img src="img/instagram.svg" alt="logo_gitHub"
               class="logo-footer"></a></li>
-        <li><a href="https://rs.school/js/" class="nav-link"><img src="img/instagram.svg" alt="logo_rss"
-              class="logo-footer"></a></li>
-        <li><a href="#" class="nav-link"><img src="img/twitter.svg" alt="logo_twitter" class="logo-footer"></a></li>
+        <li><a href="https://rs.school/js/"><img src="img/youtube.svg" alt="logo_rss" class="logo-footer"></a></li>
+        <li><a href="#"><img src="img/twitter.svg" alt="logo_twitter" class="logo-footer"></a></li>
       </ul>
 
     </footer>
