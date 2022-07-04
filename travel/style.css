@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+.mob-photo,
+.mob1-link,
+.mob2-link,
+.nav-burger {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -18,7 +25,7 @@ nav {
 
 
 .body-wrapper {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     position: relative;
 }
@@ -108,6 +115,7 @@ nav {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
+    border: none;
 }
 
 .button:hover {
@@ -137,7 +145,7 @@ h2 {
     background-image: url(img/Rectangle33.jpg);
     background-position-y: 93px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     padding: 0 0 61px 0;
 }
 
@@ -155,7 +163,7 @@ h2 {
 }
 
 .stories-item {
-    height: 250px;
+    min-height: 250px;
     display: flex;
     gap: 40px;
 }
@@ -170,8 +178,7 @@ h2 {
     gap: 24px;
 }
 
-.foto-stories {
-    width: 400px;
+.photo-stories {
     height: 250px;
     filter: drop-shadow(0px 4px 4px #0D606F);
     border-radius: 16px;
@@ -224,6 +231,7 @@ h2 {
     gap: 10px;
     margin: 40px auto auto auto;
     padding: 0;
+    border: none;
 }
 
 .button-4:hover {
@@ -315,6 +323,7 @@ h2 {
     position: absolute;
     right: 18px;
     top: 18px;
+    border: none;
 }
 
 .button-2:hover {
@@ -332,7 +341,7 @@ h2 {
 }
 
 .main-1 {
-    width: 892px;
+    max-width: 892px;
     height: 422px;
 }
 
@@ -401,8 +410,7 @@ h2 {
     gap: 60px;
 }
 
-.foto-courusel {
-    width: 800px;
+.photo-courusel {
     height: 800px;
     border-radius: 16px;
 }
@@ -422,6 +430,11 @@ h2 {
     position: absolute;
     left: 15px;
     bottom: 43px;
+}
+
+.arrow-back-destination,
+.arrow-to-destination {
+    display: none;
 }
 
 .courusel {
@@ -464,6 +477,7 @@ h2 {
     gap: 10px;
     margin: 0 auto 80px auto;
     padding: 0;
+    border: none;
 }
 
 .button-3:hover {
@@ -517,4 +531,502 @@ h2 {
 .logo-footer:hover {
     transform: rotate(360deg);
     transition: 1.5s;
+}
+
+.header-burger {
+    display: none;
+}
+
+@media (max-width: 390px) {
+    .header-burger {
+        display: block;
+        position: relative;
+        width: 26.25px;
+        height: 16px;
+        margin-top: 28px;
+        margin-right: 9px;
+
+    }
+
+    .vector-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-burger:before,
+    .header-burger:after {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2.67px;
+        left: 0;
+    }
+
+    .header-burger:before {
+        top: 0;
+    }
+
+    .header-burger:after {
+        bottom: 0;
+    }
+
+    .header-burger span {
+        position: absolute;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2.67px;
+        top: 7px;
+    }
+
+    .title-logo {
+        display: none;
+    }
+
+    .preview {
+        background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(img/garrett-parker-DlkF4-dbCOU-unsplash\ 2.jpg);
+        height: 251px;
+        padding: 0 15px;
+        border-radius: 27px 27px 0 0;
+    }
+
+    .preview-title,
+    .text-preview {
+        display: none;
+    }
+
+    .text-action {
+        width: 100%;
+        font-family: 'Aleo';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F2785C;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 16px;
+        padding: 2px 15px 0px 17px;
+    }
+
+    .button-2 {
+        width: 92px;
+        height: 30px;
+        background: #0D606F;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 15px;
+        color: #FFFFFF;
+        position: absolute;
+        right: 9px;
+        top: 9px;
+    }
+
+    .form {
+        top: 142px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .style-header {
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90px;
+        position: relative;
+        margin-bottom: -90px;
+        background: none;
+        box-shadow: none;
+    }
+
+    .title-header {
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #F2785C;
+        text-transform: uppercase;
+        margin: 0 0;
+    }
+
+    .photo-stories {
+        max-width: 155px;
+        height: 130px;
+        filter: drop-shadow(0px 4px 4px #0D606F);
+        border-radius: 16px;
+        object-fit: cover;
+    }
+
+    .stories-item-title {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
+        color: #0D606F;
+    }
+
+    .stories-item-text-block {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 11px;
+        color: #0D606F;
+    }
+
+    .stories-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 15px;
+        margin: 0 auto;
+        gap: 15px;
+    }
+
+    .stories-item {
+        display: flex;
+        gap: 10px;
+        min-height: 130px;
+    }
+
+    .stories-item-text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+
+    .link-next {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 9px;
+        line-height: 11px;
+        text-decoration-line: underline;
+        color: #0D606F;
+        margin-top: -24px;
+    }
+
+    .item-1 {
+        margin-top: 10px;
+    }
+
+    .over,
+    .text-footer {
+        display: none;
+    }
+
+    .button-4 {
+        width: 92px;
+        height: 30px;
+        background: #0D606F;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        margin: 10px auto auto auto;
+        padding: 0;
+        border: none;
+    }
+
+    .svg-little {
+        width: 10px;
+        height: 10px;
+    }
+
+    .travel-text {
+        margin: 0 auto 10px auto;
+        width: fit-content;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #F2785C;
+    }
+
+    .button-3 {
+        width: 92px;
+        height: 30px;
+        background: #0D606F;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 10px auto 20px auto;
+        padding: 0;
+        border: none;
+    }
+
+    .destinations-text {
+        margin: 20px auto 20px auto;
+        width: fit-content;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #F2785C;
+    }
+
+    .step-1 {
+        width: 24.4%;
+    }
+
+    .step-2 {
+        width: 32.3%;
+        padding-left: 0;
+    }
+
+    .step-3 {
+        width: 21%;
+        margin-right: 9px;
+    }
+
+    .steps {
+        height: 400px;
+        padding: 20px 0 0 0;
+        height: auto;
+    }
+
+    .steps-text {
+        margin: 0 auto 20px auto;
+    }
+
+    .svg-steps {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .svg-text {
+        margin: 0;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        color: #0D606F;
+    }
+
+    .main-2 {
+        gap: 14.6%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .photo-courusel {
+        max-width: 360px;
+        height: 210px;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+
+    .courusel {
+        overflow: visible;
+    }
+
+    .courusel-first-item {
+        max-width: 100%;
+    }
+
+    .courusel-item-title {
+        font-family: 'Red Hat Text';
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 15px;
+        bottom: 176px;
+    }
+
+    .arrow-back-destination,
+    .arrow-to-destination {
+        display: block;
+    }
+
+    .courusel-hidden-item {
+        display: none;
+    }
+
+    .arrow-to-destination {
+        position: absolute;
+        right: 4px;
+        bottom: 90px;
+    }
+
+    .arrow-back-destination {
+        position: absolute;
+        left: 11px;
+        bottom: 92px;
+    }
+
+    .sve-steps-mob {
+        margin: 0 auto -10px 16px;
+    }
+
+    .svg-text-mob {
+        margin: 0px -6px 0 15px;
+    }
+
+    .svg-text-mob-2 {
+        margin: 0 -10px 0 -3px;
+    }
+
+    .svg-text-mob-3 {
+        margin: -10px 0px 0 0px;
+    }
+
+
+    .dot {
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background: rgba(242, 120, 92, 0.5);
+    }
+
+    .dot.dot-active {
+        background: rgba(242, 120, 92, 0.5);
+    }
+
+    .dot-mob {
+        background: #F2785C;
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        margin: -21px;
+        gap: 6px;
+        position: absolute;
+        left: 198px;
+    }
+
+    .mob {
+        margin-left: -4px;
+    }
+
+    .body-wrapper {
+        max-width: 390px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .stories {
+        background-image: url(img/Rectangle28.jpg);
+        background-position-y: 30px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 0 0 64px 0;
+        border-radius: 0 0 27px 27px;
+    }
+
+    .style-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 120px;
+        height: 61px;
+        width: 100%;
+        position: absolute;
+        left: 1px;
+    }
+
+    .stories-wrapper {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 0 0 14px 0;
+    }
+
+    .dec-photo {
+        display: none;
+    }
+
+    .mob-photo {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 165px;
+        height: 250px;
+        background-color: #F2785C;
+        border-radius: 10px;
+        z-index: 5;
+        padding: 0;
+    }
+
+    .nav-header {
+        margin: 0 auto;
+        padding-right: 16px;
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .mob1-link,
+    .mob2-link {
+        display: block;
+    }
+
+    .link-header {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+    .nav-burger {
+        display: block;
+        align-items: flex-end;
+    }
+
+    .menu-block {
+        padding: 15px 15px 9px 15px;
+    }
 }
