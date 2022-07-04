@@ -23,12 +23,21 @@
         <img src="img/logo-vector.svg" alt="logo" class="vector-logo">
         <span class="title-logo">Travel Portal</span>
       </div>
+      <div class="header-burger">
+        <span></span>
+      </div>
       <nav>
+        <div class="nav-burger">
+          <img src="img/x.svg" alt="logo" class="menu-block">
+        </div>
         <ul class="nav-header">
           <li class="first-link"><a href="#howitworks" class="link-header">How It Works</a></li>
           <li class="second-link"><a href="#planyourtrip" class="link-header">Plan Your Trip</a></li>
           <li class="third-link"><a href="#destinations" class="link-header">Destinations</a></li>
           <li class="last-link"><a href="#travelstories" class="link-header">Travel Stories</a></li>
+
+          <li class="mob1-link"><a href="#account" class="link-header">Account</a></li>
+          <li class="mob2-link"><a href="#socialmedia" class="link-header">Social Media</a></li>
         </ul>
       </nav>
       <input type="button" value="Login" class="button">
@@ -49,17 +58,17 @@
       <section class="steps">
         <h2 class="steps-text" id="planyourtrip">3 steps to the perfect trip</h2>
         <div class="main-2">
-          <div class="step">
-            <img src="img/bicycle.svg" alt="logo bicycle" class="svg-steps">
-            <p class="svg-text">Tell us what you want to do</p>
+          <div class="step step-1">
+            <img src="img/bicycle.svg" alt="logo bicycle" class="svg-steps sve-steps-mob">
+            <p class="svg-text svg-text-mob">Tell us what you want to do</p>
           </div>
           <div class="step step-2">
-            <img src="img/calculator.svg" alt="logo calculator" class="svg-steps">
-            <p class="svg-text">Share us preferable dates</p>
+            <img src="img/calculator.svg" alt="logo calculator" class="svg-steps sve-steps-mob">
+            <p class="svg-text svg-text-mob-2">Share us preferable dates</p>
           </div>
-          <div class="step">
+          <div class="step step-3">
             <img src="img/plane.svg" alt="logo plane" class="svg-steps">
-            <p class="svg-text">We will give you recommendations</p>
+            <p class="svg-text svg-text-mob-3">We will give you recommendations</p>
           </div>
         </div>
       </section>
@@ -67,19 +76,25 @@
         <h2 class="destinations-text">popular destinations</h2>
         <div class="courusel">
           <div class="courusel-content" id="destinations">
-            <div class="courusel-item"><img src="img/Rectangle23.jpg" alt="Norway" class="foto-courusel"><span
-                class="courusel-item-title">Norway</span></div>
-            <div class="courusel-item"><img src="img/Rectangle24.jpg" alt="Japan" class="foto-courusel"><span
-                class="courusel-item-title">Japan</span></div>
-            <div class="courusel-item"><img src="img/Rectangle25.jpg" alt="USA" class="foto-courusel"><span
-                class="courusel-item-title">USA</span></div>
+            <div class="courusel-item courusel-first-item">
+              <img src="img/Rectangle23.jpg" alt="Spain" class="photo-courusel dec-photo">
+              <img src="img/Rectangle26.jpg" alt="Spain" class="photo-courusel mob-photo">
+              <img src="img/vector back.svg" alt="arrow back" class="arrow-back-destination">
+              <img src="img/vector to.svg" alt="arrow to" class="arrow-to-destination">
+              <span class="courusel-item-title">Spain</span>
+            </div>
+            <div class="courusel-item courusel-hidden-item"><img src="img/Rectangle24.jpg" alt="Japan"
+                class="photo-courusel"><span class="courusel-item-title">Japan</span></div>
+            <div class="courusel-item courusel-hidden-item"><img src="img/Rectangle25.jpg" alt="USA"
+                class="photo-courusel"><span class="courusel-item-title">USA</span></div>
           </div>
           <div class="dots">
-            <div class="dot"></div>
+            <div class="dot dot-mob"></div>
             <div class="dot dot-active"></div>
             <div class="dot"></div>
           </div>
-          <button class="button-3"><img src="img/arrow.svg" alt="arrow"><span>Find More</span></button>
+          <button class="button-3"><img src="img/arrow.svg" alt="arrow" class="svg-little"><span class="mob">Find
+              More</span></button>
         </div>
       </section>
       <section class="stories">
@@ -87,62 +102,81 @@
         <div class="stories-wrapper">
           <div class="stories-content" id="travelstories">
             <div class="stories-item item-1">
-              <img src="img/Rectangle29.jpg" alt="Thailand" class="foto-stories">
+              <img src="img/Rectangle29.jpg" alt="Thailand" class="photo-stories dec-photo">
+              <img src="img/Rectangle15.jpg" alt="Thailand" class="photo-stories mob-photo">
               <div class="stories-item-text"><span class="stories-item-title">10 Photos of Attractive Thailand</span>
                 <span class="stories-item-text-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                   ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit...
+                  voluptate velit
+                  esse cillum dolore eu fugiat nulla<span class="over">pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in
+                    culpa
+                    qui officia deserunt mollit anim id est laborum</span>.Lorem ipsum dolor sit a<span>...</span><span
+                    class="over">met, consectetur adipiscing
+                    elit...</span>
                   <br><a href="#" class="link-next">Read More</a></span>
               </div>
             </div>
             <div class="stories-item">
-              <img src="img/Rectangle30.jpg" alt="Utah" class="foto-stories">
+              <img src="img/Rectangle30.jpg" alt="Utah" class="photo-stories dec-photo">
+              <img src="img/Rectangle16.jpg" alt="Utah" class="photo-stories mob-photo">
               <div class="stories-item-text"><span class="stories-item-title">Canyonlands National Park, Utah</span>
                 <span class="stories-item-text-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                   ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                   voluptate velit
-                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa
-                  qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit...
+                  esse cillum dolore eu fugiat nulla<span class="over">pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in
+                    culpa
+                    qui officia deserunt mollit anim id est laborum</span>.Lorem ipsum dolor sit a<span>...</span><span
+                    class="over">met, consectetur adipiscing
+                    elit...</span>
                   <br><a href="#" class="link-next">Read More</a></span>
               </div>
             </div>
             <div class="stories-item">
-              <img src="img/Rectangle31.jpg" alt="Mountains" class="foto-stories">
+              <img src="img/Rectangle31.jpg" alt="Mountains" class="photo-stories dec-photo">
+              <img src="img/Rectangle27.jpg" alt="Mountains" class="photo-stories mob-photo">
               <div class="stories-item-text"><span class="stories-item-title">I left my heart in the Mountains!</span>
                 <span class="stories-item-text-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                   ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit...
+                  voluptate velit
+                  esse cillum dolore eu fugiat nulla<span class="over">pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in
+                    culpa
+                    qui officia deserunt mollit anim id est laborum</span>.Lorem ipsum dolor sit a<span>...</span><span
+                    class="over">met, consectetur adipiscing
+                    elit...</span>
                   <br><a href="#" class="link-next">Read More</a></span>
               </div>
             </div>
             <div class="stories-item">
-              <img src="img/Rectangle32.jpg" alt="Car" class="foto-stories">
+              <img src="img/Rectangle32.jpg" alt="Car" class="photo-stories dec-photo">
+              <img src="img/Rectangle17.jpg" alt="Car" class="photo-stories mob-photo">
               <div class="stories-item-text"><span class="stories-item-title">The Longest journey in my life!</span>
                 <span class="stories-item-text-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                   ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit...
+                  voluptate velit
+                  esse cillum dolore eu fugiat nulla<span class="over">pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in
+                    culpa
+                    qui officia deserunt mollit anim id est laborum</span>.Lorem ipsum dolor sit a<span>...</span><span
+                    class="over">met, consectetur adipiscing
+                    elit...</span>
                   <br><a href="#" class="link-next">Read More</a></span>
               </div>
             </div>
 
           </div>
-          <button class="button-4"><img src="img/arrow.svg" alt="arrow"><span>See More</span></button>
+          <button class="button-4"><img src="img/arrow.svg" alt="arrow" class="svg-little"><span>See
+              More</span></button>
         </div>
       </section>
     </main>
@@ -152,10 +186,11 @@
       <div class="text-footer">
         <p>All Rights Reserved © Travel Portal</p>
       </div>
-      <ul class="link-footer">
+      <ul class="link-footer" id="socialmedia">
         <li><a href="https://github.com/EkaterinAutumn"><img src="img/instagram.svg" alt="logo_gitHub"
               class="logo-footer"></a></li>
-        <li><a href="https://rs.school/js/"><img src="img/youtube.svg" alt="logo_rss" class="logo-footer"></a></li>
+        <li><a href="https://rs.school/js-stage0/"><img src="img/youtube.svg" alt="logo_rss" class="logo-footer"></a>
+        </li>
         <li><a href="#"><img src="img/twitter.svg" alt="logo_twitter" class="logo-footer"></a></li>
       </ul>
 
