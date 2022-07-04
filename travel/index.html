@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
   <link rel="icon" href="img/globe-map.ico">
   <title>Travel Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +22,12 @@
         <img src="img/logo-vector.svg" alt="logo" class="vector-logo">
         <span class="title-logo">Travel Portal</span>
       </div>
-      <div class="header-burger">
+      <div id="burger" class="header-burger">
         <span></span>
       </div>
-      <nav>
+      <nav id="menu">
         <div class="nav-burger">
-          <img src="img/x.svg" alt="logo" class="menu-block">
+          <img src="img/x.svg" alt="logo" class="menu-block" id="closeButton">
         </div>
         <ul class="nav-header">
           <li class="first-link"><a href="#howitworks" class="link-header">How It Works</a></li>
@@ -40,6 +39,7 @@
           <li class="mob2-link"><a href="#socialmedia" class="link-header">Social Media</a></li>
         </ul>
       </nav>
+      <div id="shadow" class="body-shadow"></div>
       <input type="button" value="Login" class="button">
     </header>
 
@@ -79,8 +79,8 @@
             <div class="courusel-item courusel-first-item">
               <img src="img/Rectangle23.jpg" alt="Spain" class="photo-courusel dec-photo">
               <img src="img/Rectangle26.jpg" alt="Spain" class="photo-courusel mob-photo">
-              <img src="img/vector back.svg" alt="arrow back" class="arrow-back-destination">
-              <img src="img/vector to.svg" alt="arrow to" class="arrow-to-destination">
+              <img src="img/vector-back.svg" alt="arrow back" class="arrow-back-destination">
+              <img src="img/vector-to.svg" alt="arrow to" class="arrow-to-destination">
               <span class="courusel-item-title">Spain</span>
             </div>
             <div class="courusel-item courusel-hidden-item"><img src="img/Rectangle24.jpg" alt="Japan"
@@ -196,6 +196,7 @@
 
     </footer>
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
