@@ -5,7 +5,8 @@
 .mob-photo,
 .mob1-link,
 .mob2-link,
-.nav-burger {
+.nav-burger,
+.body-shadow {
     display: none;
 }
 
@@ -988,13 +989,35 @@ h2 {
     nav {
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px;
         width: 165px;
         height: 250px;
         background-color: #F2785C;
         border-radius: 10px;
         z-index: 5;
         padding: 0;
+        transition: 1s;
+    }
+
+    nav.active {
+        right: 0;
+        transition: 1s;
+    }
+
+    .body-shadow {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.25);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+
+    .body-shadow.active {
+        display: block;
+        transition: 2s;
     }
 
     .nav-header {
@@ -1030,3 +1053,42 @@ h2 {
         padding: 15px 15px 9px 15px;
     }
 }
+
+@media (max-width: 389px) {
+    .stories {
+        background-size: cover;
+    }
+
+    .main-2 {
+        gap: 14.6%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .steps {
+        height: 400px;
+        padding: 20px 12px 0 0;
+        height: auto;
+    }
+
+    .svg-text-mob-3 {
+        margin: -10px 0px 0px -10px;
+    }
+
+    .link-footer {
+        position: static;
+    }
+
+    .dots {
+        margin-left: 150px;
+        left: 0
+    }
+
+    .photo-courusel {
+        max-width: -webkit-fill-available;
+    }
+
+    .courusel-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
