@@ -405,19 +405,27 @@ h2 {
 }
 
 .courusel-content {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
     gap: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .photo-courusel {
-    height: 800px;
+    height: 100%;
+    width: auto;
     border-radius: 16px;
 }
 
 .courusel-item {
     position: relative;
+    height: 100%;
 }
 
 .courusel-item-title {
@@ -438,8 +446,11 @@ h2 {
     display: none;
 }
 
-.courusel {
+.courusel-div {
     overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-top: 55.8%;
 }
 
 .dot {
@@ -1336,13 +1347,19 @@ h2 {
 
     .photo-courusel {
         max-width: 360px;
-        height: 210px;
+        height: 100%;
         border-radius: 16px;
         object-fit: cover;
     }
 
-    .courusel {
+    .courusel-div {
         overflow: visible;
+        padding-top: 53.8%;
+    }
+
+    .courusel-item {
+        position: relative;
+        height: 100%;
     }
 
     .courusel-first-item {
@@ -1359,7 +1376,7 @@ h2 {
         color: #FFFFFF;
         position: absolute;
         left: 15px;
-        bottom: 176px;
+        top: 8px;
     }
 
     .arrow-back-destination,
@@ -1373,14 +1390,14 @@ h2 {
 
     .arrow-to-destination {
         position: absolute;
-        right: 4px;
-        bottom: 90px;
+        right: 5px;
+        top: 90px;
     }
 
     .arrow-back-destination {
         position: absolute;
         left: 11px;
-        bottom: 92px;
+        top: 92px;
     }
 
     .sve-steps-mob {
@@ -1418,10 +1435,10 @@ h2 {
     .dots {
         display: flex;
         justify-content: center;
-        margin: -21px;
         gap: 6px;
         position: absolute;
-        left: 198px;
+        margin-left: 177px;
+        margin-top: -20px;
     }
 
     .mob {
@@ -1576,18 +1593,77 @@ h2 {
     .link-footer {
         position: static;
     }
+}
 
+@media (max-width: 370px) {
     .dots {
-        margin-left: 150px;
-        left: 0
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        position: absolute;
+        margin-left: 172px;
+        margin-top: -20px;
     }
 
-    .photo-courusel {
-        max-width: -webkit-fill-available;
+    .arrow-back-destination {
+        position: absolute;
+        left: 11px;
+        top: 83px;
     }
 
-    .courusel-content {
-        padding-left: 10px;
-        padding-right: 10px;
+    .arrow-to-destination {
+        position: absolute;
+        right: 5px;
+        top: 83px;
+    }
+
+    .courusel-item-title {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 350px) {
+    .dots {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        position: absolute;
+        margin-left: 164px;
+        margin-top: -20px;
+    }
+
+    .arrow-back-destination {
+        position: absolute;
+        left: 11px;
+        top: 81px;
+    }
+
+    .arrow-to-destination {
+        position: absolute;
+        right: 5px;
+        top: 79px;
+    }
+}
+
+@media (max-width: 330px) {
+    .dots {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        position: absolute;
+        margin-left: 153px;
+        margin-top: -20px;
+    }
+
+    .arrow-back-destination {
+        position: absolute;
+        left: 11px;
+        top: 77px;
+    }
+
+    .arrow-to-destination {
+        position: absolute;
+        right: 5px;
+        top: 74px;
     }
 }
