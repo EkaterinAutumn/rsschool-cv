@@ -524,11 +524,6 @@ h2 {
     gap: 20px;
 }
 
-.logo-footer {
-    width: 33.65px;
-    height: 33.65px;
-}
-
 .logo-footer:hover {
     transform: rotate(360deg);
     transition: 1.5s;
@@ -536,6 +531,491 @@ h2 {
 
 .header-burger {
     display: none;
+}
+
+@media (max-width: 1439px) {
+    .title-logo {
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-header {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .steps {
+        height: 424px;
+        padding: 80px 84px 97px 131px;
+    }
+
+    .first-link,
+    .second-link,
+    .third-link,
+    .last-link {
+        width: auto;
+    }
+}
+
+@media (max-width: 1077px) {
+    .button-2 {
+        width: 170px;
+        font-size: 18px;
+        right: 55px;
+        font-size: 20px;
+    }
+
+    .text-action {
+        width: -webkit-fill-available;
+        padding: 0;
+        margin-right: 30px;
+        border-width: 0;
+        padding-left: 30px;
+        font-size: 20px;
+    }
+
+    .main-2 {
+        gap: 10px;
+    }
+
+    .preview-title {
+        font-size: 78px;
+    }
+
+    .photo-stories {
+        height: 220px;
+    }
+
+    .stories-content {
+        padding: 0 63px;
+    }
+}
+
+@media (max-width: 900px) {
+    .preview-title {
+        font-size: 68px;
+    }
+
+    .title-logo {
+        font-size: 22px;
+    }
+
+    .text-preview {
+
+        font-size: 16px;
+    }
+
+    .text-action {
+        margin-right: 70px;
+    }
+
+    .button-2 {
+        width: 153px;
+        font-size: 18px;
+        right: 90px;
+        font-size: 18px;
+    }
+
+    .svg-text {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .svg-steps {
+        width: 90px;
+        height: 90px;
+    }
+
+    .destinations-text {
+        font-size: 35px;
+    }
+
+    .travel-text {
+        font-size: 35px;
+    }
+
+    .button-3 {
+        width: 177px;
+        font-size: 19px;
+    }
+
+    .stories-item-title {
+        font-size: 25px;
+    }
+
+    .stories-item-text-block {
+        font-size: 15px;
+    }
+
+    .button-4 {
+        width: 177px;
+        font-size: 19px;
+    }
+
+    .logo-footer {
+        width: 28.65px;
+        height: 27.65px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .style-header {
+        padding: 0 80px;
+    }
+
+    .preview-title {
+        font-size: 59px;
+    }
+
+    .photo-stories {
+        height: 180px;
+    }
+
+    .stories-content {
+        padding: 0px 50px;
+    }
+
+    .link-footer {
+        gap: 10px;
+    }
+
+    .text-footer {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .svg-steps {
+        width: 80px;
+        height: 80px;
+    }
+
+    .destinations-text {
+        font-size: 25px;
+    }
+
+    .travel-text {
+        font-size: 25px;
+    }
+
+    .main-2 {
+        gap: 35px;
+    }
+
+    .button {
+        width: 80px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 700px) {
+    .title-logo {
+        font-size: 20px;
+    }
+
+    .style-header {
+        padding: 0px 50px;
+    }
+
+    .preview {
+        padding: 122px 0 0 75px;
+    }
+
+    .text-preview {
+        font-size: 14px;
+    }
+
+    .link-footer {
+        right: 100px;
+    }
+}
+
+@media (max-width: 650px) {
+    .preview-title {
+        font-size: 50px;
+    }
+
+    .style-header {
+        padding: 0px 40px;
+    }
+
+    .link-footer {
+        margin: -60px;
+    }
+
+    .logo-footer {
+        width: 20.65px;
+        height: 20.65px;
+    }
+
+    .step-2 {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title-logo {
+        font-size: 15px;
+    }
+
+    .link-header {
+        font-size: 12px;
+    }
+
+    .nav-header {
+        gap: 10px;
+    }
+
+    .preview-title {
+        font-size: 46px;
+        line-height: 70px;
+    }
+
+    .button-2 {
+        width: 124px;
+        font-size: 14px;
+    }
+
+    .text-action {
+        font-size: 17px;
+    }
+
+    .text-preview {
+        font-size: 14px;
+        display: block;
+        width: -webkit-fill-available;
+        padding-right: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .svg-steps {
+        width: 70px;
+        height: 70px;
+    }
+
+    .destinations-text {
+        font-size: 20px;
+    }
+
+    .travel-text {
+        font-size: 20px;
+    }
+
+    .steps {
+        height: 424px;
+        padding: 70px 84px 97px 101px;
+    }
+
+    .button-3,
+    .button-4 {
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .photo-stories {
+        height: 150px;
+    }
+
+    .stories-content {
+        padding: 0px 28px;
+    }
+
+    .stories-item-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .stories-item-text-block {
+        font-size: 12px;
+    }
+
+    .link-next {
+        font-size: 15px;
+    }
+
+    .destinations-text {
+        margin: 0 auto 35px auto;
+    }
+
+    .travel-text {
+        margin: 0px auto 35px auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .style-header {
+        padding: 0px 20px;
+    }
+
+    nav {
+        padding-right: 15px;
+    }
+
+    .preview-title {
+        font-size: 37px;
+    }
+
+    .text-action {
+        font-size: 14px;
+        height: 80px;
+    }
+
+    .button-2 {
+        width: 100px;
+        font-size: 11px;
+        height: 45px;
+        top: 17px;
+        right: 80px;
+    }
+
+    .steps {
+        height: 400px;
+        padding: 70px 77px 97px 77px;
+    }
+
+    .button-3,
+    .button-4 {
+        width: 140px;
+        height: 50px;
+        font-size: 13px;
+    }
+
+    .text-footer {
+        font-size: 9px;
+    }
+
+    .photo-stories {
+        height: 120px;
+    }
+
+    .stories-item-text {
+        gap: 15px;
+    }
+
+    .stories-item {
+        gap: 30px;
+    }
+
+    .button-3 {
+        margin: 0 auto 30px auto;
+    }
+
+    .preview {
+        height: 700px;
+    }
+}
+
+@media (max-width: 465px) {
+    .nav-header {
+        gap: 5px;
+    }
+
+    .link-header {
+        font-size: 10px;
+    }
+
+    .title-logo {
+        padding-right: 20px;
+    }
+
+    .preview-title {
+        font-size: 33px;
+    }
+
+    .text-action {
+        font-size: 12px;
+        height: 70px;
+    }
+
+    .button-2 {
+        width: 90px;
+        font-size: 10px;
+        height: 45px;
+        top: 13px;
+        right: 80px;
+    }
+
+    .preview {
+        height: 650px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .svg-steps {
+        width: 65px;
+        height: 50px;
+    }
+
+    .destinations-text {
+        font-size: 16px;
+    }
+
+    .travel-text {
+        font-size: 16px;
+    }
+
+    .steps {
+        height: 400px;
+        padding: 70px 77px 97px 51px;
+    }
+
+    .stories-content {
+        margin: -10px auto;
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .preview-title {
+        font-size: 27px;
+        padding-right: 20px;
+    }
+
+    .style-header {
+        padding: 0px 10px;
+    }
+
+    .text-action {
+        padding-left: 12px;
+    }
+
+    .text-action {
+        height: 70px;
+    }
+
+    .svg-text {
+        font-size: 10px;
+    }
+
+    .step-2 {
+        padding-left: 26px;
+    }
+
+    .link-footer {
+        margin: -60px;
+        gap: 5px;
+    }
+
+    .button-2 {
+        width: 77px;
+        font-size: 9px;
+        height: 42px;
+        top: 14px;
+        right: 80px;
+    }
 }
 
 @media (max-width: 390px) {
@@ -599,6 +1079,7 @@ h2 {
     }
 
     .text-action {
+        margin-right: 0;
         width: 100%;
         font-family: 'Aleo';
         font-style: italic;
@@ -1052,6 +1533,23 @@ h2 {
     .menu-block {
         padding: 15px 15px 9px 15px;
     }
+
+    .link-footer {
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        align-content: flex-start;
+        position: absolute;
+        right: 121px;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .logo-footer {
+        width: 33.65px;
+        height: 33.65px;
+    }
 }
 
 @media (max-width: 389px) {
@@ -1092,3 +1590,4 @@ h2 {
         padding-left: 10px;
         padding-right: 10px;
     }
+}
