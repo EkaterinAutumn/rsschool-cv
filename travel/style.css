@@ -747,6 +747,16 @@ h2 {
     .link-footer {
         right: 100px;
     }
+
+    .courusel-content {
+        gap: 40px;
+    }
+
+
+    .courusel-item-title {
+        font-size: 26px;
+        bottom: 18px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -861,6 +871,15 @@ h2 {
 
     .travel-text {
         margin: 0px auto 35px auto;
+    }
+
+    .courusel-content {
+        gap: 30px;
+    }
+
+    .courusel-item-title {
+        font-size: 20px;
+        bottom: 18px;
     }
 }
 
