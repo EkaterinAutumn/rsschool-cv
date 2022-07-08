@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+.mob-photo,
+.mob1-link,
+.mob2-link,
+.nav-burger,
+.body-shadow {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -18,7 +26,7 @@ nav {
 
 
 .body-wrapper {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     position: relative;
 }
@@ -108,6 +116,7 @@ nav {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
+    border: none;
 }
 
 .button:hover {
@@ -137,7 +146,7 @@ h2 {
     background-image: url(img/Rectangle33.jpg);
     background-position-y: 93px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     padding: 0 0 61px 0;
 }
 
@@ -155,7 +164,7 @@ h2 {
 }
 
 .stories-item {
-    height: 250px;
+    min-height: 250px;
     display: flex;
     gap: 40px;
 }
@@ -170,8 +179,7 @@ h2 {
     gap: 24px;
 }
 
-.foto-stories {
-    width: 400px;
+.photo-stories {
     height: 250px;
     filter: drop-shadow(0px 4px 4px #0D606F);
     border-radius: 16px;
@@ -224,6 +232,7 @@ h2 {
     gap: 10px;
     margin: 40px auto auto auto;
     padding: 0;
+    border: none;
 }
 
 .button-4:hover {
@@ -315,6 +324,7 @@ h2 {
     position: absolute;
     right: 18px;
     top: 18px;
+    border: none;
 }
 
 .button-2:hover {
@@ -332,7 +342,7 @@ h2 {
 }
 
 .main-1 {
-    width: 892px;
+    max-width: 892px;
     height: 422px;
 }
 
@@ -395,20 +405,27 @@ h2 {
 }
 
 .courusel-content {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
     gap: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-.foto-courusel {
-    width: 800px;
-    height: 800px;
+.photo-courusel {
+    height: 100%;
+    width: auto;
     border-radius: 16px;
 }
 
 .courusel-item {
     position: relative;
+    height: 100%;
 }
 
 .courusel-item-title {
@@ -424,8 +441,16 @@ h2 {
     bottom: 43px;
 }
 
-.courusel {
+.arrow-back-destination,
+.arrow-to-destination {
+    display: none;
+}
+
+.courusel-div {
     overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-top: 55.8%;
 }
 
 .dot {
@@ -464,6 +489,7 @@ h2 {
     gap: 10px;
     margin: 0 auto 80px auto;
     padding: 0;
+    border: none;
 }
 
 .button-3:hover {
@@ -509,12 +535,1154 @@ h2 {
     gap: 20px;
 }
 
-.logo-footer {
-    width: 33.65px;
-    height: 33.65px;
-}
-
 .logo-footer:hover {
     transform: rotate(360deg);
     transition: 1.5s;
+}
+
+.header-burger {
+    display: none;
+}
+
+@media (max-width: 1439px) {
+    .title-logo {
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-header {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .steps {
+        height: 424px;
+        padding: 80px 84px 97px 131px;
+    }
+
+    .first-link,
+    .second-link,
+    .third-link,
+    .last-link {
+        width: auto;
+    }
+}
+
+@media (max-width: 1077px) {
+    .button-2 {
+        width: 170px;
+        font-size: 18px;
+        right: 55px;
+        font-size: 20px;
+    }
+
+    .text-action {
+        width: -webkit-fill-available;
+        padding: 0;
+        margin-right: 30px;
+        border-width: 0;
+        padding-left: 30px;
+        font-size: 20px;
+    }
+
+    .main-2 {
+        gap: 10px;
+    }
+
+    .preview-title {
+        font-size: 78px;
+    }
+
+    .photo-stories {
+        height: 220px;
+    }
+
+    .stories-content {
+        padding: 0 63px;
+    }
+}
+
+@media (max-width: 900px) {
+    .preview-title {
+        font-size: 68px;
+    }
+
+    .title-logo {
+        font-size: 22px;
+    }
+
+    .text-preview {
+
+        font-size: 16px;
+    }
+
+    .text-action {
+        margin-right: 70px;
+    }
+
+    .button-2 {
+        width: 153px;
+        font-size: 18px;
+        right: 90px;
+        font-size: 18px;
+    }
+
+    .svg-text {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .svg-steps {
+        width: 90px;
+        height: 90px;
+    }
+
+    .destinations-text {
+        font-size: 35px;
+    }
+
+    .travel-text {
+        font-size: 35px;
+    }
+
+    .button-3 {
+        width: 177px;
+        font-size: 19px;
+    }
+
+    .stories-item-title {
+        font-size: 25px;
+    }
+
+    .stories-item-text-block {
+        font-size: 15px;
+    }
+
+    .button-4 {
+        width: 177px;
+        font-size: 19px;
+    }
+
+    .logo-footer {
+        width: 28.65px;
+        height: 27.65px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .style-header {
+        padding: 0 80px;
+    }
+
+    .preview-title {
+        font-size: 59px;
+    }
+
+    .photo-stories {
+        height: 180px;
+    }
+
+    .stories-content {
+        padding: 0px 50px;
+    }
+
+    .link-footer {
+        gap: 10px;
+    }
+
+    .text-footer {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .svg-steps {
+        width: 80px;
+        height: 80px;
+    }
+
+    .destinations-text {
+        font-size: 25px;
+    }
+
+    .travel-text {
+        font-size: 25px;
+    }
+
+    .main-2 {
+        gap: 35px;
+    }
+
+    .button {
+        width: 80px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 700px) {
+    .title-logo {
+        font-size: 20px;
+    }
+
+    .style-header {
+        padding: 0px 50px;
+    }
+
+    .preview {
+        padding: 122px 0 0 75px;
+    }
+
+    .text-preview {
+        font-size: 14px;
+    }
+
+    .link-footer {
+        right: 100px;
+    }
+
+    .courusel-content {
+        gap: 40px;
+    }
+
+
+    .courusel-item-title {
+        font-size: 26px;
+        bottom: 18px;
+    }
+}
+
+@media (max-width: 650px) {
+    .preview-title {
+        font-size: 50px;
+    }
+
+    .style-header {
+        padding: 0px 40px;
+    }
+
+    .link-footer {
+        margin: -60px;
+    }
+
+    .logo-footer {
+        width: 20.65px;
+        height: 20.65px;
+    }
+
+    .step-2 {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title-logo {
+        font-size: 15px;
+    }
+
+    .link-header {
+        font-size: 12px;
+    }
+
+    .nav-header {
+        gap: 10px;
+    }
+
+    .preview-title {
+        font-size: 46px;
+        line-height: 70px;
+    }
+
+    .button-2 {
+        width: 124px;
+        font-size: 14px;
+    }
+
+    .text-action {
+        font-size: 17px;
+    }
+
+    .text-preview {
+        font-size: 14px;
+        display: block;
+        width: -webkit-fill-available;
+        padding-right: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .svg-steps {
+        width: 70px;
+        height: 70px;
+    }
+
+    .destinations-text {
+        font-size: 20px;
+    }
+
+    .travel-text {
+        font-size: 20px;
+    }
+
+    .steps {
+        height: 424px;
+        padding: 70px 84px 97px 101px;
+    }
+
+    .button-3,
+    .button-4 {
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .photo-stories {
+        height: 150px;
+    }
+
+    .stories-content {
+        padding: 0px 28px;
+    }
+
+    .stories-item-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .stories-item-text-block {
+        font-size: 12px;
+    }
+
+    .link-next {
+        font-size: 15px;
+    }
+
+    .destinations-text {
+        margin: 0 auto 35px auto;
+    }
+
+    .travel-text {
+        margin: 0px auto 35px auto;
+    }
+
+    .courusel-content {
+        gap: 30px;
+    }
+
+    .courusel-item-title {
+        font-size: 20px;
+        bottom: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .style-header {
+        padding: 0px 20px;
+    }
+
+    nav {
+        padding-right: 15px;
+    }
+
+    .preview-title {
+        font-size: 37px;
+    }
+
+    .text-action {
+        font-size: 14px;
+        height: 80px;
+    }
+
+    .button-2 {
+        width: 100px;
+        font-size: 11px;
+        height: 45px;
+        top: 17px;
+        right: 80px;
+    }
+
+    .steps {
+        height: 400px;
+        padding: 70px 77px 97px 77px;
+    }
+
+    .button-3,
+    .button-4 {
+        width: 140px;
+        height: 50px;
+        font-size: 13px;
+    }
+
+    .text-footer {
+        font-size: 9px;
+    }
+
+    .photo-stories {
+        height: 120px;
+    }
+
+    .stories-item-text {
+        gap: 15px;
+    }
+
+    .stories-item {
+        gap: 30px;
+    }
+
+    .button-3 {
+        margin: 0 auto 30px auto;
+    }
+
+    .preview {
+        height: 700px;
+    }
+}
+
+@media (max-width: 465px) {
+    .nav-header {
+        gap: 5px;
+    }
+
+    .link-header {
+        font-size: 10px;
+    }
+
+    .title-logo {
+        padding-right: 20px;
+    }
+
+    .preview-title {
+        font-size: 33px;
+    }
+
+    .text-action {
+        font-size: 12px;
+        height: 70px;
+    }
+
+    .button-2 {
+        width: 90px;
+        font-size: 10px;
+        height: 45px;
+        top: 13px;
+        right: 80px;
+    }
+
+    .preview {
+        height: 650px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .svg-steps {
+        width: 65px;
+        height: 50px;
+    }
+
+    .destinations-text {
+        font-size: 16px;
+    }
+
+    .travel-text {
+        font-size: 16px;
+    }
+
+    .steps {
+        height: 400px;
+        padding: 70px 77px 97px 51px;
+    }
+
+    .stories-content {
+        margin: -10px auto;
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .preview-title {
+        font-size: 27px;
+        padding-right: 20px;
+    }
+
+    .style-header {
+        padding: 0px 10px;
+    }
+
+    .text-action {
+        padding-left: 12px;
+    }
+
+    .text-action {
+        height: 70px;
+    }
+
+    .svg-text {
+        font-size: 10px;
+    }
+
+    .step-2 {
+        padding-left: 26px;
+    }
+
+    .link-footer {
+        margin: -60px;
+        gap: 5px;
+    }
+
+    .button-2 {
+        width: 77px;
+        font-size: 9px;
+        height: 42px;
+        top: 14px;
+        right: 80px;
+    }
+}
+
+@media (max-width: 390px) {
+    .header-burger {
+        display: block;
+        position: relative;
+        width: 26.25px;
+        height: 16px;
+        margin-top: 28px;
+        margin-right: 9px;
+
+    }
+
+    .vector-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-burger:before,
+    .header-burger:after {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2.67px;
+        left: 0;
+    }
+
+    .header-burger:before {
+        top: 0;
+    }
+
+    .header-burger:after {
+        bottom: 0;
+    }
+
+    .header-burger span {
+        position: absolute;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2.67px;
+        top: 7px;
+    }
+
+    .title-logo {
+        display: none;
+    }
+
+    .preview {
+        background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(img/garrett-parker-DlkF4-dbCOU-unsplash\ 2.jpg);
+        height: 251px;
+        padding: 0 15px;
+        border-radius: 27px 27px 0 0;
+    }
+
+    .preview-title,
+    .text-preview {
+        display: none;
+    }
+
+    .text-action {
+        margin-right: 0;
+        width: 100%;
+        font-family: 'Aleo';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F2785C;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 16px;
+        padding: 2px 15px 0px 17px;
+    }
+
+    .button-2 {
+        width: 92px;
+        height: 30px;
+        background: #0D606F;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 15px;
+        color: #FFFFFF;
+        position: absolute;
+        right: 9px;
+        top: 9px;
+    }
+
+    .form {
+        top: 142px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .style-header {
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90px;
+        position: relative;
+        margin-bottom: -90px;
+        background: none;
+        box-shadow: none;
+    }
+
+    .title-header {
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #F2785C;
+        text-transform: uppercase;
+        margin: 0 0;
+    }
+
+    .photo-stories {
+        max-width: 155px;
+        height: 130px;
+        filter: drop-shadow(0px 4px 4px #0D606F);
+        border-radius: 16px;
+        object-fit: cover;
+    }
+
+    .stories-item-title {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
+        color: #0D606F;
+    }
+
+    .stories-item-text-block {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 11px;
+        color: #0D606F;
+    }
+
+    .stories-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 15px;
+        margin: 0 auto;
+        gap: 15px;
+    }
+
+    .stories-item {
+        display: flex;
+        gap: 10px;
+        min-height: 130px;
+    }
+
+    .stories-item-text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+
+    .link-next {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 9px;
+        line-height: 11px;
+        text-decoration-line: underline;
+        color: #0D606F;
+        margin-top: -24px;
+    }
+
+    .item-1 {
+        margin-top: 10px;
+    }
+
+    .over,
+    .text-footer {
+        display: none;
+    }
+
+    .button-4 {
+        width: 92px;
+        height: 30px;
+        background: #0D606F;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        margin: 10px auto auto auto;
+        padding: 0;
+        border: none;
+    }
+
+    .svg-little {
+        width: 10px;
+        height: 10px;
+    }
+
+    .travel-text {
+        margin: 0 auto 10px auto;
+        width: fit-content;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #F2785C;
+    }
+
+    .button-3 {
+        width: 92px;
+        height: 30px;
+        background: #0D606F;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 10px auto 20px auto;
+        padding: 0;
+        border: none;
+    }
+
+    .destinations-text {
+        margin: 20px auto 20px auto;
+        width: fit-content;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #F2785C;
+    }
+
+    .step-1 {
+        width: 24.4%;
+    }
+
+    .step-2 {
+        width: 32.3%;
+        padding-left: 0;
+    }
+
+    .step-3 {
+        width: 21%;
+        margin-right: 9px;
+    }
+
+    .steps {
+        height: 400px;
+        padding: 20px 0 0 0;
+        height: auto;
+    }
+
+    .steps-text {
+        margin: 0 auto 20px auto;
+    }
+
+    .svg-steps {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .svg-text {
+        margin: 0;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        color: #0D606F;
+    }
+
+    .main-2 {
+        gap: 14.6%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .photo-courusel {
+        max-width: 360px;
+        height: 100%;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+
+    .courusel-div {
+        overflow: visible;
+        padding-top: 53.8%;
+    }
+
+    .courusel-item {
+        position: relative;
+        height: 100%;
+    }
+
+    .courusel-first-item {
+        max-width: 100%;
+    }
+
+    .courusel-item-title {
+        font-family: 'Red Hat Text';
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 15px;
+        top: 8px;
+    }
+
+    .arrow-back-destination,
+    .arrow-to-destination {
+        display: block;
+    }
+
+    .courusel-hidden-item {
+        display: none;
+    }
+
+    .arrow-to-destination {
+        position: absolute;
+        right: 5px;
+        top: 90px;
+    }
+
+    .arrow-back-destination {
+        position: absolute;
+        left: 11px;
+        top: 92px;
+    }
+
+    .sve-steps-mob {
+        margin: 0 auto -10px 16px;
+    }
+
+    .svg-text-mob {
+        margin: 0px -6px 0 15px;
+    }
+
+    .svg-text-mob-2 {
+        margin: 0 -10px 0 -3px;
+    }
+
+    .svg-text-mob-3 {
+        margin: -10px 0px 0 0px;
+    }
+
+
+    .dot {
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background: rgba(242, 120, 92, 0.5);
+    }
+
+    .dot.dot-active {
+        background: rgba(242, 120, 92, 0.5);
+    }
+
+    .dot-mob {
+        background: #F2785C;
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        position: absolute;
+        margin-left: 177px;
+        margin-top: -20px;
+    }
+
+    .mob {
+        margin-left: -4px;
+    }
+
+    .body-wrapper {
+        max-width: 390px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .stories {
+        background-image: url(img/Rectangle28.jpg);
+        background-position-y: 30px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 0 0 64px 0;
+        border-radius: 0 0 27px 27px;
+    }
+
+    .style-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 120px;
+        height: 61px;
+        width: 100%;
+        position: absolute;
+        left: 1px;
+    }
+
+    .stories-wrapper {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 0 0 14px 0;
+    }
+
+    .dec-photo {
+        display: none;
+    }
+
+    .mob-photo {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 165px;
+        height: 250px;
+        background-color: #F2785C;
+        border-radius: 10px;
+        z-index: 5;
+        padding: 0;
+        transition: 1s;
+    }
+
+    nav.active {
+        right: 0;
+        transition: 1s;
+    }
+
+    .body-shadow {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.25);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+
+    .body-shadow.active {
+        display: block;
+        transition: 2s;
+    }
+
+    .nav-header {
+        margin: 0 auto;
+        padding-right: 16px;
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .mob1-link,
+    .mob2-link {
+        display: block;
+    }
+
+    .link-header {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+    .nav-burger {
+        display: block;
+        align-items: flex-end;
+    }
+
+    .menu-block {
+        padding: 15px 15px 9px 15px;
+    }
+
+    .link-footer {
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        align-content: flex-start;
+        position: absolute;
+        right: 121px;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .logo-footer {
+        width: 33.65px;
+        height: 33.65px;
+    }
+}
+
+@media (max-width: 389px) {
+    .stories {
+        background-size: cover;
+    }
+
+    .main-2 {
+        gap: 14.6%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .steps {
+        height: 400px;
+        padding: 20px 12px 0 0;
+        height: auto;
+    }
+
+    .svg-text-mob-3 {
+        margin: -10px 0px 0px -10px;
+    }
+
+    .link-footer {
+        position: static;
+    }
+}
+
+@media (max-width: 370px) {
+    .dots {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        position: absolute;
+        margin-left: 172px;
+        margin-top: -20px;
+    }
+
+    .arrow-back-destination {
+        position: absolute;
+        left: 11px;
+        top: 83px;
+    }
+
+    .arrow-to-destination {
+        position: absolute;
+        right: 5px;
+        top: 83px;
+    }
+
+    .courusel-item-title {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 350px) {
+    .dots {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        position: absolute;
+        margin-left: 164px;
+        margin-top: -20px;
+    }
+
+    .arrow-back-destination {
+        position: absolute;
+        left: 11px;
+        top: 81px;
+    }
+
+    .arrow-to-destination {
+        position: absolute;
+        right: 5px;
+        top: 79px;
+    }
+}
+
+@media (max-width: 330px) {
+    .dots {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        position: absolute;
+        margin-left: 153px;
+        margin-top: -20px;
+    }
+
+    .arrow-back-destination {
+        position: absolute;
+        left: 11px;
+        top: 77px;
+    }
+
+    .arrow-to-destination {
+        position: absolute;
+        right: 5px;
+        top: 74px;
+    }
 }
