@@ -40,7 +40,7 @@
         </ul>
       </nav>
       <div id="shadow" class="body-shadow"></div>
-      <input type="button" value="Login" class="button">
+      <input type="button" value="Login" class="button" id="login">
     </header>
 
 
@@ -197,6 +197,66 @@
       </ul>
 
     </footer>
+  </div>
+
+  <div id="popup-login" class="popup">
+    <div class="popup-body">
+      <div class="popup-content-1">
+        <p class="caption-popup">Log in to your account</p>
+        <button class="button-facebook">
+          <img src="img/facebooklogo.svg" alt="facebooklogo" class="facebooklogo">
+          <span class="signin-facebook">Sign In with Facebook</span>
+        </button>
+        <button class="button-google">
+          <img src="img/googlelogo.svg" alt="googlelogo" class="googlelogo">
+          <span class="signin-google">Sign In with Google</span>
+        </button>
+        <div class="divide-block">
+          <hr class="solid"><span class="divider">or</span>
+          <hr class="solid">
+        </div>
+        <form>
+          <label class="label-form-popup">E-mail
+            <br><input type="text" class="input-popup" id="email-input">
+          </label>
+        </form>
+        <form>
+          <label class="label-form-popup">Password
+            <br><input type="text" class="input-popup-pas" id="password-input">
+          </label>
+        </form>
+        <button class="button-signin" id="sign-in-button">
+          <span class="signin">Sign In</span>
+        </button>
+        <p class="forgot-password">Forgot Your Password?</p>
+        <hr class="solid-2">
+        <p class="not-account">Don’t have an account? <a href="#" class="register-link" id="register">Register</a></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="popup-registration" class="popup">
+    <div class="popup-body-2">
+      <div class="popup-content-2">
+        <p class="caption-popup">Create account</p>
+        <form>
+          <label class="label-form-popup">E-mail
+            <br><input type="text" class="input-popup" id="email-reg">
+          </label>
+        </form>
+        <form>
+          <label class="label-form-popup">Password
+            <br><input type="text" class="input-popup-pas" id="password-reg">
+          </label>
+        </form>
+        <button class="button-up" id="sign-up-button">
+          <span class="signin">Sign Up</span>
+        </button>
+        <hr class="solid-2">
+        <p class="not-account">Already have an account? <a href="#" class="register-link" id="signup">Log in</a></p>
+      </div>
+    </div>
   </div>
   <script src="index.js"></script>
 </body>
