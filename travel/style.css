@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+.vectors,
 .mob-photo,
 .mob1-link,
 .mob2-link,
@@ -1049,6 +1050,27 @@ h2 {
 }
 
 @media (max-width: 390px) {
+
+    .arrow-to-destination {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 574px;
+        z-index: 5;
+    }
+
+    .arrow-back-destination {
+        display: block;
+        z-index: 5;
+        position: absolute;
+        left: 26px;
+        top: 574px;
+    }
+
+    .vectors {
+        display: block;
+    }
+
     .header-burger {
         display: block;
         position: relative;
@@ -1056,7 +1078,6 @@ h2 {
         height: 16px;
         margin-top: 28px;
         margin-right: 9px;
-
     }
 
     .vector-logo {
@@ -1398,25 +1419,8 @@ h2 {
         top: 8px;
     }
 
-    .arrow-back-destination,
-    .arrow-to-destination {
-        display: block;
-    }
-
     .courusel-hidden-item {
         display: none;
-    }
-
-    .arrow-to-destination {
-        position: absolute;
-        right: 5px;
-        top: 90px;
-    }
-
-    .arrow-back-destination {
-        position: absolute;
-        left: 11px;
-        top: 92px;
     }
 
     .sve-steps-mob {
@@ -1927,4 +1931,125 @@ h2 {
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
     border: none;
+}
+
+@media (max-width: 390px) {
+
+    .popup-content-1 {
+        max-width: 300px;
+        max-height: 320px;
+        padding: 12px 25px 12px 25px;
+    }
+
+    .solid {
+        width: 115px;
+        border: 0.5px solid rgba(13, 96, 111, 0.5);
+    }
+
+    .button-facebook {
+        border-radius: 4px;
+        width: 250px;
+        height: 25px;
+        gap: 5px;
+        margin: 0 0 10px 0;
+    }
+
+    .button-google {
+        border-radius: 4px;
+        width: 250px;
+        height: 25px;
+        margin: 0 0 5px 0;
+    }
+
+    .input-popup {
+        margin: 2px 0 2px 0;
+        width: 250px;
+        height: 24px;
+        border-radius: 4px;
+    }
+
+    .input-popup-pas {
+        margin: 2px 0 8px 0;
+        width: 250px;
+        height: 24px;
+        border-radius: 4px;
+    }
+
+    .button-signin {
+        border-radius: 4px;
+        width: 250px;
+        height: 24px;
+    }
+
+    .solid-2 {
+        margin: 8px 0 8px 0;
+        width: 250px;
+        border: 0.5px solid rgba(13, 96, 111, 0.5);
+    }
+
+    .popup-content-2 {
+        width: 280px;
+        max-height: 320px;
+        padding: 12px 25px 12px 25px;
+    }
+
+    .button-up {
+        border-radius: 4px;
+        width: 250px;
+        height: 24px;
+    }
+
+    .caption-popup {
+        font-size: 17px;
+        margin: 0px 0 10px 0;
+        line-height: 20px;
+    }
+
+    .signin-facebook {
+        font-size: 10px;
+    }
+
+    .signin-google {
+        font-size: 10px;
+    }
+
+    .facebooklogo,
+    .googlelogo {
+        width: 12px;
+        height: 12px;
+    }
+
+    .label-form-popup {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .signin {
+        font-size: 10px;
+    }
+
+    .divider {
+        margin: 0 5px;
+        line-height: 10px;
+        font-size: 8px;
+    }
+
+    .divide-block {
+        margin: 0;
+    }
+
+    .forgot-password {
+        font-size: 9px;
+        line-height: 10px;
+    }
+
+    .not-account {
+        font-size: 9px;
+        line-height: 10px;
+    }
+
+    .register-link {
+        font-size: 9px;
+        line-height: 10px;
+    }
 }
