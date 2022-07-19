@@ -101,12 +101,12 @@ signUpButton.onclick = signUpForm;
 
 
 
-let photoContainer = document.getElementById('destinations')
-let dotContainer = document.getElementById('dots')
-let vectorRight = document.getElementById('vector-right')
-let vectorLeft = document.getElementById('vector-left')
-let photoContainerMob = document.querySelectorAll('.photo-courusel-mob')
-
+let photoContainer = document.getElementById('destinations');
+let dotContainer = document.getElementById('dots');
+let dotContainerMob = document.getElementById('dots-mob');
+let vectorRight = document.getElementById('vector-right');
+let vectorLeft = document.getElementById('vector-left');
+let photoContainerMob = document.getElementById('items-mobile');
 
 photoContainer.addEventListener('click', (event) => {
     let target = event.target;
@@ -136,24 +136,23 @@ photoContainer.addEventListener('click', (event) => {
     }
 });
 
-
 function goRight() {
-        let lastElement = photoContainerMob[photoContainerMob.length - 1];
-        let firstElement = photoContainerMob[0];
-        let lastDot = dotContainer.children[dotContainer.children.length - 1];
-        let firstDot = dotContainer.children[0];
-        lastElement.after(firstElement);
-        lastDot.after(firstDot);
-    }
+    let firstElement = photoContainerMob.children[0];
+    let lastElement = photoContainerMob.children[photoContainerMob.children.length - 1];
+    let lastDot = dotContainerMob.children[dotContainerMob.children.length - 1];
+    let firstDot = dotContainerMob.children[0];
+    lastElement.after(firstElement);
+    lastDot.after(firstDot);
+}
 
 function goLeft() {
-        let firstElement = photoContainerMob[photoContainerMob.length - 1];
-        let lastElement = photoContainerMob[0];
-        let firstDot = dotContainer.children[dotContainer.children.length - 1];
-        let lastDot = dotContainer.children[0];
-        lastElement.before(firstElement);
-        lastDot.before(firstDot);
-    }
+    let firstElement = photoContainerMob.children[photoContainerMob.children.length - 1];
+    let lastElement = photoContainerMob.children[0];
+    let firstDot = dotContainerMob.children[dotContainerMob.children.length - 1];
+    let lastDot = dotContainerMob.children[0];
+    lastElement.before(firstElement);
+    lastDot.before(firstDot);
+}
 
 vectorRight.onclick = goRight;
 vectorLeft.onclick = goLeft;
