@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+.mobile,
 .vectors,
 .mob-photo,
 .mob1-link,
@@ -1051,23 +1052,37 @@ h2 {
 
 @media (max-width: 390px) {
 
+    .courusel-content {
+        padding-left: 15px;
+        justify-content: space-between;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .deckstop {
+        display: none;
+    }
+
     .arrow-to-destination {
         display: block;
-        position: absolute;
-        right: 20px;
-        top: 574px;
+        position: relative;
+        left: 340px;
+        top: 59px;
         z-index: 5;
     }
 
     .arrow-back-destination {
         display: block;
+        position: relative;
+        left: 19px;
+        top: 90px;
         z-index: 5;
-        position: absolute;
-        left: 26px;
-        top: 574px;
     }
 
     .vectors {
+        position: absolute;
         display: block;
     }
 
@@ -1393,16 +1408,13 @@ h2 {
     }
 
     .courusel-div {
-        overflow: visible;
+        overflow: hidden;
         padding-top: 53.8%;
     }
 
     .courusel-item {
         position: relative;
         height: 100%;
-    }
-
-    .courusel-first-item {
         max-width: 100%;
     }
 
@@ -1593,6 +1605,15 @@ h2 {
 }
 
 @media (max-width: 389px) {
+
+    .arrow-to-destination {
+        display: block;
+        position: relative;
+        left: 330px;
+        top: 64px;
+        z-index: 5;
+    }
+
     .stories {
         background-size: cover;
     }
@@ -1628,20 +1649,35 @@ h2 {
         margin-top: -20px;
     }
 
-    .arrow-back-destination {
-        position: absolute;
-        left: 11px;
-        top: 83px;
+    .arrow-to-destination {
+        display: block;
+        position: relative;
+        left: 320px;
+        top: 64px;
+        z-index: 5;
     }
 
-    .arrow-to-destination {
-        position: absolute;
-        right: 5px;
-        top: 83px;
+    .arrow-back-destination {
+        display: block;
+        position: relative;
+        left: 26px;
+        top: 92px;
+        z-index: 5;
     }
 
     .courusel-item-title {
         font-size: 17px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .arrow-to-destination {
+        display: block;
+        position: relative;
+        left: 310px;
+        top: 64px;
+        z-index: 5;
     }
 }
 
@@ -1655,16 +1691,30 @@ h2 {
         margin-top: -20px;
     }
 
-    .arrow-back-destination {
-        position: absolute;
-        left: 11px;
-        top: 81px;
+    .arrow-to-destination {
+        display: block;
+        position: relative;
+        left: 300px;
+        top: 64px;
+        z-index: 5;
     }
 
+    .arrow-back-destination {
+        display: block;
+        position: relative;
+        left: 26px;
+        top: 92px;
+        z-index: 5;
+    }
+}
+
+@media (max-width: 340px) {
     .arrow-to-destination {
-        position: absolute;
-        right: 5px;
-        top: 79px;
+        display: block;
+        position: relative;
+        left: 290px;
+        top: 64px;
+        z-index: 5;
     }
 }
 
@@ -1678,16 +1728,20 @@ h2 {
         margin-top: -20px;
     }
 
-    .arrow-back-destination {
-        position: absolute;
-        left: 11px;
-        top: 77px;
+    .arrow-to-destination {
+        display: block;
+        position: relative;
+        left: 280px;
+        top: 64px;
+        z-index: 5;
     }
 
-    .arrow-to-destination {
-        position: absolute;
-        right: 5px;
-        top: 74px;
+    .arrow-back-destination {
+        display: block;
+        position: relative;
+        left: 26px;
+        top: 92px;
+        z-index: 5;
     }
 }
 
