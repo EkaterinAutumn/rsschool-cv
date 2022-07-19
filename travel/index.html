@@ -35,7 +35,7 @@
           <li class="third-link"><a href="#destinations" class="link-header">Destinations</a></li>
           <li class="last-link"><a href="#travelstories" class="link-header">Travel Stories</a></li>
 
-          <li class="mob1-link"><a href="#account" class="link-header">Account</a></li>
+          <li class="mob1-link"><a href="#account" class="link-header" id="account">Account</a></li>
           <li class="mob2-link"><a href="#socialmedia" class="link-header">Social Media</a></li>
         </ul>
       </nav>
@@ -74,23 +74,31 @@
       </section>
       <section class="destinations">
         <h2 class="destinations-text">popular destinations</h2>
+        <div class="vectors">
+          <img src="img/vector-back.svg" alt="arrow back" class="arrow-back-destination" id="vector-left">
+          <img src="img/vector-to.svg" alt="arrow to" class="arrow-to-destination" id="vector-right">
+        </div>
         <div class="courusel">
           <div class="courusel-div">
             <div class="courusel-content" id="destinations">
               <div class="courusel-item courusel-first-item">
                 <img src="img/Rectangle23.jpg" alt="Spain" class="photo-courusel dec-photo">
-                <img src="img/Rectangle26.jpg" alt="Spain" class="photo-courusel mob-photo">
-                <img src="img/vector-back.svg" alt="arrow back" class="arrow-back-destination">
-                <img src="img/vector-to.svg" alt="arrow to" class="arrow-to-destination">
+                <img src="img/Rectangle26.jpg" alt="Spain" class="photo-courusel mob-photo photo-courusel-mob">
                 <span class="courusel-item-title">Spain</span>
               </div>
-              <div class="courusel-item courusel-hidden-item"><img src="img/Rectangle24.jpg" alt="Japan"
-                  class="photo-courusel"><span class="courusel-item-title">Japan</span></div>
-              <div class="courusel-item courusel-hidden-item"><img src="img/Rectangle25.jpg" alt="USA"
-                  class="photo-courusel"><span class="courusel-item-title">USA</span></div>
+              <div class="courusel-item courusel-hidden-item">
+                <img src="img/Rectangle24.jpg" alt="Japan" class="photo-courusel">
+                <img src="img/Rectangle34.jpg" alt="Japan" class="photo-courusel mob-photo photo-courusel-mob">
+                <span class="courusel-item-title">Japan</span>
+              </div>
+              <div class="courusel-item courusel-hidden-item">
+                <img src="img/Rectangle25.jpg" alt="USA" class="photo-courusel">
+                <img src="img/Rectangle35.jpg" alt="USA" class="photo-courusel mob-photo photo-courusel-mob">
+                <span class="courusel-item-title">USA</span>
+              </div>
             </div>
           </div>
-          <div class="dots">
+          <div class="dots" id="dots">
             <div class="dot dot-mob"></div>
             <div class="dot dot-active"></div>
             <div class="dot"></div>
