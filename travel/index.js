@@ -35,6 +35,12 @@ function closeLogin() {
     popupLogin.classList.remove('popup-active')
 }
 
+function openLoginMob() {
+    popupLogin.classList.add('popup-active');
+    menu.classList.toggle('active')
+    shadowBody.classList.toggle('active')
+}
+
 function openRegistration() {
     popupRegistration.classList.add('popup-active')
     closeLogin()
@@ -50,6 +56,7 @@ function closeRegistration() {
 }
 
 login.onclick = openLogin;
+account.onclick = openLoginMob;
 register.onclick = openRegistration;
 signup.onclick = closeRegistrationAndOpenLogin;
 
@@ -91,3 +98,62 @@ function signUpForm() {
 
 signInButton.onclick = signInForm;
 signUpButton.onclick = signUpForm;
+
+
+
+let photoContainer = document.getElementById('destinations')
+let dotContainer = document.getElementById('dots')
+let vectorRight = document.getElementById('vector-right')
+let vectorLeft = document.getElementById('vector-left')
+let photoContainerMob = document.querySelectorAll('.photo-courusel-mob')
+
+
+photoContainer.addEventListener('click', (event) => {
+    let target = event.target;
+
+    if (target.parentElement.classList.contains('courusel-item')) {
+        let couruselItem = target.parentElement;
+
+        let index = Array.prototype.indexOf.call(photoContainer.children, couruselItem)
+
+        if (index == 0) {
+            let lastElement = photoContainer.children[photoContainer.children.length - 1];
+            let firstElement = photoContainer.children[0];
+            let lastDot = dotContainer.children[dotContainer.children.length - 1];
+            let firstDot = dotContainer.children[0];
+            lastElement.after(firstElement);
+            lastDot.after(firstDot);
+        }
+
+        if (index == 2) {
+            let firstElement = photoContainer.children[photoContainer.children.length - 1];
+            let lastElement = photoContainer.children[0];
+            let firstDot = dotContainer.children[dotContainer.children.length - 1];
+            let lastDot = dotContainer.children[0];
+            lastElement.before(firstElement);
+            lastDot.before(firstDot);
+        }
+    }
+});
+
+
+function goRight() {
+        let lastElement = photoContainerMob[photoContainerMob.length - 1];
+        let firstElement = photoContainerMob[0];
+        let lastDot = dotContainer.children[dotContainer.children.length - 1];
+        let firstDot = dotContainer.children[0];
+        lastElement.after(firstElement);
+        lastDot.after(firstDot);
+    }
+
+function goLeft() {
+        let firstElement = photoContainerMob[photoContainerMob.length - 1];
+        let lastElement = photoContainerMob[0];
+        let firstDot = dotContainer.children[dotContainer.children.length - 1];
+        let lastDot = dotContainer.children[0];
+        lastElement.before(firstElement);
+        lastDot.before(firstDot);
+    }
+
+vectorRight.onclick = goRight;
+vectorLeft.onclick = goLeft;
