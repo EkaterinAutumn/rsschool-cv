@@ -4,7 +4,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const devServer = (isDev) => !isDev ? {} : {
     devServer: {
-        contentBase: path.join(__dirname, 'public'),
+        // contentBase: path.join(__dirname, 'public'),
+        static: {
+            directory: path.join(__dirname, 'public')
+          },
         open: true,
         hot: true,
         port: 8080,
@@ -31,7 +34,7 @@ module.exports = ({ develop }) => ({
 
         new CopyPlugin({
             patterns: [{
-                from: './public', to: './assets'
+                from: './public', to: './public'
             }],
         }),
     ],
