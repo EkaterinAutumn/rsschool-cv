@@ -1,0 +1,194 @@
+body {
+    padding: 15px;
+    margin: 0;
+    color: white;
+    background: url(./bg.jpeg) center/cover, rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    transition: background-image 1s ease-in-out;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+.content-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pleer {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pleer-controlls {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: start;
+    align-items: center;
+}
+
+.song {
+    opacity: .8;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.song:hover {
+    opacity: 1;
+}
+
+.play-prev,
+.play-next {
+    width: 25px;
+    height: 25px;
+    padding-bottom: 10px;
+}
+
+.play {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;
+}
+
+.play-small {
+    width: 10px;
+    height: 10px;
+    padding-right: 10px;
+}
+
+.wheather {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    border: 0.5px solid white;
+}
+
+.content-center {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.button-slider-icon {
+    cursor: pointer;
+}
+
+.slider-icon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.slider-prev {
+    left: 0;
+    top: 50%;
+}
+
+.slider-next {
+    right: 0;
+    top: 50%;
+}
+
+.date-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    font-size: 100px;
+}
+
+.date {
+    font-size: 24px;
+
+}
+
+.entername {
+    font-size: 40px;
+}
+
+.name {
+    max-width: 50%;
+    padding: 10px;
+    font-size: 40px;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.517);
+    font-size: 40px;
+}
+
+.quotes {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.reload {
+    padding-bottom: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+.footer-link {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: rgb(88, 185, 211);
+    transition: 0.5s;
+}
+
+.year-class {
+    color: white;
+}
+
+.year-class:hover {
+    color: rgb(88, 185, 211);
+    transition: 0.5s;
+}
+
+
+.github-logo,
+.rsschool-logo {
+    width: 40px;
+    height: 40px;
+}
