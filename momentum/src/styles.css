@@ -91,8 +91,8 @@ body {
 }
 
 .slider-icon {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     cursor: pointer;
 }
@@ -128,7 +128,7 @@ body {
 }
 
 .name {
-    max-width: 50%;
+    width: 230px;
     padding: 10px;
     font-size: 40px;
     text-align: left;
@@ -191,4 +191,93 @@ body {
 .rsschool-logo {
     width: 40px;
     height: 40px;
+}
+
+@media (min-width: 1400px) {
+    body {
+        font-size: 25px;
+    }
+
+    .time {
+        font-size: 120px;
+    }
+
+    .date {
+        font-size: 50px;
+    }
+
+    .entername {
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .time {
+        font-size: 80px;
+    }
+
+    .date {
+        font-size: 30px;
+    }
+
+    .entername {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .time {
+        font-size: 60px;
+    }
+
+    .date {
+        font-size: 20px;
+    }
+
+    .entername {
+        font-size: 20px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .name {
+        font-size: 25px;
+        padding-top: 20px;
+        width: 150px;
+    }
+
+    ::placeholder {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .time {
+        font-size: 40px;
+    }
+
+    .date {
+        font-size: 15px;
+    }
+
+    .entername {
+        font-size: 15px;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+    .name {
+        font-size: 15px;
+        padding-top: 20px;
+        width: 100px;
+    }
+
+    ::placeholder {
+        font-size: 15px;
+    }
 }
