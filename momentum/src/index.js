@@ -10,6 +10,7 @@ function updateTime() {
     const currentDate = new Date();
 
     showGreeting(currentDate);
+    showDay(currentDate)
 
     currentTime = currentDate.toLocaleTimeString();
     showTime();
@@ -41,6 +42,23 @@ function showGreeting(date) {
     greeting.textContent = `Good ${timeOfDay}`
 }
 
-function showDay(day) {
-    
+function showDay(date) {
+    const options = { weekday: 'long', month: 'long', day: 'numeric' };
+    const currentDay = date.toLocaleDateString('en-US', options);
+    day.textContent = currentDay;
 }
+
+
+const input = document.getElementById('input')
+
+function setNameInLocalStorage() {
+    localStorage.setItem('name', input.value);
+}
+window.addEventListener('beforeunload', setNameInLocalStorage)
+
+function getNameInLocalStorage() {
+    if (localStorage.getItem('name')) {
+        input.value = localStorage.getItem('name');
+    }
+}
+window.addEventListener('load', getNameInLocalStorage)
