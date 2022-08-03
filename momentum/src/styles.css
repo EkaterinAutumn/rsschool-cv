@@ -193,7 +193,7 @@ body {
     height: 40px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
     body {
         font-size: 25px;
     }
@@ -206,7 +206,18 @@ body {
         font-size: 50px;
     }
 
+
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.517);
+        font-size: 50px;
+    }
+
     .entername {
+        font-size: 50px;
+    }
+
+    .name {
+        width: 290px;
         font-size: 50px;
     }
 }
