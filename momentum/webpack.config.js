@@ -7,7 +7,7 @@ const devServer = (isDev) => !isDev ? {} : {
         // contentBase: path.join(__dirname, 'public'),
         static: {
             directory: path.join(__dirname, 'public')
-          },
+        },
         open: true,
         hot: true,
         port: 8080,
@@ -33,9 +33,11 @@ module.exports = ({ develop }) => ({
         new CleanWebpackPlugin(),
 
         new CopyPlugin({
-            patterns: [{
-                from: './public', to: './public'
-            }],
+            patterns: [
+                {
+                    from: './public', to: './public'
+                },
+            ],
         }),
     ],
 

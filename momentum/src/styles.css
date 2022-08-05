@@ -80,6 +80,20 @@ body {
     border: 0.5px solid white;
 }
 
+.city {
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+hr {
+    margin: 5px 0 5px 0;
+    width: 230px;
+}
+
 .content-center {
     gap: 20px;
     display: flex;
@@ -160,6 +174,9 @@ body {
     cursor: pointer;
 }
 
+.temperature {
+    padding-right: 10px;
+}
 
 .footer-link {
     display: flex;
@@ -224,6 +241,35 @@ body {
     }
 }
 
+@media (max-width: 1500px) {
+    .city {
+        width: 230px;
+    }
+
+    hr {
+        width: 230px;
+    }
+}
+
+@media (max-width: 1450px) {
+    hr {
+        width: 165px;
+    }
+
+    .city {
+        width: 165px;
+    }
+}
+
+@media (max-width: 1400px) {
+    hr {
+        width: 150px;
+    }
+
+    .city {
+        width: 150px;
+    }
+}
 
 @media (max-width: 800px) {
     .time {
@@ -240,6 +286,11 @@ body {
 }
 
 @media (max-width: 500px) {
+    .slider-icon {
+        width: 25px;
+        height: 25px;
+    }
+
     .time {
         font-size: 60px;
     }
@@ -259,11 +310,25 @@ body {
     .name {
         font-size: 25px;
         padding-top: 20px;
-        width: 150px;
+        width: 120px;
     }
 
     ::placeholder {
         font-size: 25px;
+    }
+
+    hr {
+        width: 110px;
+    }
+
+    .city {
+        width: 110px;
+    }
+}
+
+@media (max-width: 350px) {
+    .entername {
+        font-size: 18px;
     }
 }
 
@@ -274,10 +339,11 @@ body {
 
     .date {
         font-size: 15px;
+        padding-top: 10px;
     }
 
     .entername {
-        font-size: 15px;
+        font-size: 19px;
     }
 
     body {
@@ -285,12 +351,12 @@ body {
     }
 
     .name {
-        font-size: 15px;
-        padding-top: 20px;
-        width: 100px;
+        font-size: 19px;
+        padding-top: 29px;
+        width: 70px;
     }
 
     ::placeholder {
-        font-size: 15px;
+        font-size: 19px;
     }
 }
