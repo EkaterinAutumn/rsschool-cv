@@ -47,18 +47,33 @@ body {
     transition: .3s;
 }
 
+
 .song:hover {
     opacity: 1;
 }
 
-.play-prev,
+.play-prev {
+    background-image: url("../public/play-prev.svg");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    padding-bottom: 10px;
+}
+
 .play-next {
+    background-image: url("../public/play-next.svg");
+    background-size: 25px;
+    background-repeat: no-repeat;
     width: 25px;
     height: 25px;
     padding-bottom: 10px;
 }
 
 .play {
+    background-image: url("../public/play.svg");
+    background-size: 30px;
+    background-repeat: no-repeat;
     width: 30px;
     height: 30px;
     padding-bottom: 10px;
@@ -68,6 +83,33 @@ body {
     width: 10px;
     height: 10px;
     padding-right: 10px;
+}
+
+.play-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dark-next {
+    background-image: url("../public/play-next.svg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.dark-prev {
+    background-image: url("../public/play-prev.svg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.pause {
+    background-image: url("../public/pause.svg");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;
 }
 
 .wheather {

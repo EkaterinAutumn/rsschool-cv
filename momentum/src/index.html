@@ -13,20 +13,19 @@
     <header class="content-top">
         <div class="pleer">
             <div class="pleer-controlls">
-                <img src="../public/play-prev.svg" alt="play-prev" class="play-prev">
-                <img src="../public/play.svg" alt="play" class="play">
-                <img src="../public/play-next.svg" alt="play-next" class="play-next">
+                <audio></audio>
+                <div class="play-prev"></div>
+                <div class="play" id="button"></div>
+                <div class="play-next"></div>
             </div>
             <div class="playlist">
-                <div class="song"><img src="../public/play.svg" alt="play" class="play-small">Aqua Caelestis</div>
-                <div class="song"><img src="../public/play.svg" alt="play" class="play-small">Ennio Morricone</div>
-                <div class="song"><img src="../public/play.svg" alt="play" class="play-small">River Flows In You</div>
-                <div class="song"><img src="../public/play.svg" alt="play" class="play-small">Summer Wind</div>
+                <ul class="play-list">
+                </ul>
             </div>
         </div>
         <div class="weather">
             <div>
-                <input type="text" class="city" value="Moscow" id="inputweather">
+                <input type="text" class="city" id="inputweather">
                 <hr class="line">
                 </hr>
             </div>
@@ -61,13 +60,11 @@
     <footer class="content-bottom">
         <div class="quotes">
             <div class="reload-place">
-                <img src="../public/reload.svg" alt="reload" class="reload">
+                <img src="../public/reload.svg" alt="reload" class="reload" id="reload">
             </div>
-            <div class="quote">
-                "Life is what happens while you are making other plans."
+            <div class="quote" id="quotes">
             </div>
             <div class="author-quote">
-                John Lenon
             </div>
         </div>
         <nav class="footer-link">
