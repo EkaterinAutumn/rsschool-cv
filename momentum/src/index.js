@@ -5,8 +5,9 @@ import {greeting} from './greeting.module.js';
 import {fetchWeather} from './weather.module.js';
 import {getQuotes} from './quotes.module.js';
 import {getMusic} from './pleer.module.js';
+import {getPhoto} from './slider.module.js';
 
-
+getPhoto();
 greeting();
 getTimeDay();
 fetchWeather();
