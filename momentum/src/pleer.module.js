@@ -16,6 +16,7 @@ export function getMusic() {
             audio.src = playList[playNum].src;
             audio.play();
             isPlay = true;
+            (playListContainer.children[playNum]).classList.add('active');
         } else {
             audio.pause();
             isPlay = false;
@@ -49,6 +50,8 @@ export function getMusic() {
             audio.src = playList[playNum].src;
             audio.play();
             audioPrev.classList.remove('dark-prev');
+            (playListContainer.children[playNum-1]).classList.remove('active');
+            (playListContainer.children[playNum]).classList.add('active');
         } else {
             audioNext.classList.add('dark-next');
         }
@@ -61,6 +64,8 @@ export function getMusic() {
             audio.src = playList[playNum].src;
             audio.play();
             audioNext.classList.remove('dark-next');
+            (playListContainer.children[playNum+1]).classList.remove('active');
+            (playListContainer.children[playNum]).classList.add('active');
         } else {
             audioPrev.classList.add('dark-prev')
         }

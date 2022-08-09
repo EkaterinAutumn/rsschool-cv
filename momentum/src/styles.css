@@ -102,6 +102,9 @@ body {
     background-blend-mode: multiply;
 }
 
+.active {
+    font-weight: bold;
+}
 .pause {
     background-image: url("../public/pause.svg");
     background-size: 30px;
