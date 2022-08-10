@@ -113,6 +113,7 @@ body {
 .active {
     font-weight: bold;
 }
+
 .pause {
     background-image: url("../public/pause.svg");
     background-size: 30px;
@@ -126,6 +127,15 @@ body {
     gap: 5px;
     display: flex;
     flex-direction: column;
+}
+
+.error {
+    display: none;
+}
+
+.error-text {
+    font-size: 20px;
+    color: white;
 }
 
 .line {
@@ -338,6 +348,12 @@ hr {
 }
 
 @media (max-width: 500px) {
+
+    .error-text {
+        font-size: 15px;
+        width: 125px;
+    }
+
     .slider-icon {
         width: 25px;
         height: 25px;
