@@ -50,11 +50,16 @@ export function getMusic() {
             audio.play();
             isPlay = true;
             button.classList.add('pause');
-            audioPrev.classList.remove('dark-prev');
             (playListContainer.children[playNum-1]).classList.remove('active');
             (playListContainer.children[playNum]).classList.add('active');
         } else {
-            audioNext.classList.add('dark-next');
+            playNum = 0;
+            audio.src = playList[playNum].src;
+            audio.play();
+            isPlay = true;
+            button.classList.add('pause');
+            (playListContainer.children[playNum+(playList.length - 1)]).classList.remove('active');
+            (playListContainer.children[playNum]).classList.add('active');
         }
     }
 
@@ -66,11 +71,16 @@ export function getMusic() {
             audio.play();
             isPlay = true;
             button.classList.add('pause');
-            audioNext.classList.remove('dark-next');
             (playListContainer.children[playNum+1]).classList.remove('active');
             (playListContainer.children[playNum]).classList.add('active');
         } else {
-            audioPrev.classList.add('dark-prev')
+            playNum = playNum+(playList.length - 1);
+            audio.src = playList[playNum].src;
+            audio.play();
+            isPlay = true;
+            button.classList.add('pause');
+            (playListContainer.children[playNum-(playList.length - 1)]).classList.remove('active');
+            (playListContainer.children[playNum]).classList.add('active');
         }
     }
 
