@@ -31,7 +31,6 @@ export function getMusic() {
     button.addEventListener('click', toggleBtn);
 
 
-
     playList.forEach(el => {
         const li = document.createElement('li');
         li.classList.add('song');
@@ -49,6 +48,8 @@ export function getMusic() {
             playNum = playNum + 1;
             audio.src = playList[playNum].src;
             audio.play();
+            isPlay = true;
+            button.classList.add('pause');
             audioPrev.classList.remove('dark-prev');
             (playListContainer.children[playNum-1]).classList.remove('active');
             (playListContainer.children[playNum]).classList.add('active');
@@ -63,6 +64,8 @@ export function getMusic() {
             playNum = playNum - 1;
             audio.src = playList[playNum].src;
             audio.play();
+            isPlay = true;
+            button.classList.add('pause');
             audioNext.classList.remove('dark-next');
             (playListContainer.children[playNum+1]).classList.remove('active');
             (playListContainer.children[playNum]).classList.add('active');
@@ -73,5 +76,4 @@ export function getMusic() {
 
     audioPrev.addEventListener('click', playPrev)
     audioNext.addEventListener('click', playNext)
-
 }

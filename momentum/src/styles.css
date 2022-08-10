@@ -94,12 +94,20 @@ body {
     background-image: url("../public/play-next.svg");
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
+    width: 25px;
+    height: 25px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .dark-prev {
     background-image: url("../public/play-prev.svg");
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
+    width: 25px;
+    height: 25px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .active {

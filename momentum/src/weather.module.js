@@ -17,7 +17,7 @@ export function fetchWeather() {
     weatherIcon.classList.add(`owf-${data.weather[0].id}`);
     temperature.textContent = `${Math.round(data.main.temp)}°C`;
     weatherDescription.textContent = data.weather[0].description;
-    wind.textContent = `${data.wind.speed}m/s`;
+    wind.textContent = `${Math.round(data.wind.speed)} m/s`;
     humidity.textContent = `${data.main.humidity}%`;
   }
   }
