@@ -65,7 +65,7 @@ export function fetchWeather() {
     if (localStorage.getItem('city')) {
       inputweather.value = localStorage.getItem('city');
     } else {
-      inputweather.value = 'Moscow';
+      inputweather.value = 'Minsk';
     }
     getWeather();
   }
