@@ -84,6 +84,7 @@ export function getMusic() {
         }
     }
 
-    audioPrev.addEventListener('click', playPrev)
-    audioNext.addEventListener('click', playNext)
+    audioPrev.addEventListener('click', playPrev);
+    audioNext.addEventListener('click', playNext);
+    audio.addEventListener('ended', playNext);
 }
