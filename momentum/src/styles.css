@@ -1,0 +1,431 @@
+body {
+    padding: 15px;
+    margin: 0;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+.content-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pleer {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pleer-controlls {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: start;
+    align-items: center;
+}
+
+.song {
+    opacity: .8;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.song:hover {
+    opacity: 1;
+}
+
+.play-prev {
+    background-image: url("../public/play-prev.svg");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    padding-bottom: 10px;
+}
+
+.play-next {
+    background-image: url("../public/play-next.svg");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    padding-bottom: 10px;
+}
+
+.play {
+    background-image: url("../public/play.svg");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;
+}
+
+.play-small {
+    width: 10px;
+    height: 10px;
+    padding-right: 10px;
+}
+
+.play-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dark-next {
+    background-image: url("../public/play-next.svg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    width: 25px;
+    height: 25px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.dark-prev {
+    background-image: url("../public/play-prev.svg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    width: 25px;
+    height: 25px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.pause {
+    background-image: url("../public/pause.svg");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;
+}
+
+.wheather {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    display: none;
+}
+
+.error-text {
+    font-size: 20px;
+    color: white;
+}
+
+.line {
+    border: 0.5px solid white;
+}
+
+.city {
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+hr {
+    margin: 5px 0 5px 0;
+    width: 230px;
+}
+
+.content-center {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.button-slider-icon {
+    cursor: pointer;
+}
+
+.slider-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.slider-prev {
+    left: 0;
+    top: 50%;
+}
+
+.slider-next {
+    right: 0;
+    top: 50%;
+}
+
+.date-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    font-size: 100px;
+}
+
+.date {
+    font-size: 24px;
+
+}
+
+.entername {
+    font-size: 40px;
+}
+
+.name {
+    width: 230px;
+    padding: 10px;
+    font-size: 40px;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.517);
+    font-size: 40px;
+}
+
+.quotes {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.reload {
+    padding-bottom: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.temperature {
+    padding-right: 10px;
+}
+
+.footer-link {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: rgb(88, 185, 211);
+    transition: 0.5s;
+}
+
+.year-class {
+    color: white;
+}
+
+.year-class:hover {
+    color: rgb(88, 185, 211);
+    transition: 0.5s;
+}
+
+
+.github-logo,
+.rsschool-logo {
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 1500px) {
+    body {
+        font-size: 25px;
+    }
+
+    .time {
+        font-size: 120px;
+    }
+
+    .date {
+        font-size: 50px;
+    }
+
+
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.517);
+        font-size: 50px;
+    }
+
+    .entername {
+        font-size: 50px;
+    }
+
+    .name {
+        width: 290px;
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .city {
+        width: 230px;
+    }
+
+    hr {
+        width: 230px;
+    }
+}
+
+@media (max-width: 1450px) {
+    hr {
+        width: 165px;
+    }
+
+    .city {
+        width: 165px;
+    }
+}
+
+@media (max-width: 1400px) {
+    hr {
+        width: 150px;
+    }
+
+    .city {
+        width: 150px;
+    }
+}
+
+@media (max-width: 800px) {
+    .time {
+        font-size: 80px;
+    }
+
+    .date {
+        font-size: 30px;
+    }
+
+    .entername {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .error-text {
+        font-size: 15px;
+        width: 125px;
+    }
+
+    .slider-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .time {
+        font-size: 60px;
+    }
+
+    .date {
+        font-size: 20px;
+    }
+
+    .entername {
+        font-size: 20px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .name {
+        font-size: 25px;
+        padding-top: 20px;
+        width: 120px;
+    }
+
+    ::placeholder {
+        font-size: 25px;
+    }
+
+    hr {
+        width: 110px;
+    }
+
+    .city {
+        width: 110px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .entername {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    .time {
+        font-size: 40px;
+    }
+
+    .date {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    .entername {
+        font-size: 19px;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+    .name {
+        font-size: 19px;
+        padding-top: 29px;
+        width: 70px;
+    }
+
+    ::placeholder {
+        font-size: 19px;
+    }
+}

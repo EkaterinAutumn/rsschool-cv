@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>momentum</title>
+    <link rel="icon" href="../public/favicon.ico">
+</head>
+
+<body class="content">
+    <header class="content-top">
+        <div class="pleer">
+            <div class="pleer-controlls">
+                <audio></audio>
+                <div class="play-prev"></div>
+                <div class="play" id="button"></div>
+                <div class="play-next"></div>
+            </div>
+            <div class="playlist">
+                <ul class="play-list">
+                </ul>
+            </div>
+        </div>
+        <div class="weather">
+            <div>
+                <input type="text" class="city" id="inputweather">
+                <hr class="line">
+                </hr>
+            </div>
+            <div class="error">
+            </div>
+            <div class="weather-value">
+                <i class="weather-icon owf"></i>
+                <div>
+                    <span class="temperature"></span>
+                    <span class="weather-description"></span>
+                </div>
+                <div>
+                    <span>Wind speed:</span>
+                    <span class="wind"></span>
+                </div>
+                <div>
+                    <span>Humidity:</span>
+                    <span class="humidity"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="content-center">
+        <img src="../public/slider-prev.svg" alt="slider-prev" class="slider-icon slider-prev">
+        <img src="../public/slider-next.svg" alt="slider-next" class="slider-icon slider-next">
+        <div class="date-section">
+            <time class="time"></time>
+            <date class="date"></date>
+        </div>
+        <div class="entername">
+            <span id="greeting"></span>,
+            <input type="text" placeholder="[Enter name]" class="name" id="input">
+        </div>
+    </main>
+    <footer class="content-bottom">
+        <div class="quotes">
+            <div class="reload-place">
+                <img src="../public/reload.svg" alt="reload" class="reload" id="reload">
+            </div>
+            <div class="quote" id="quotes">
+            </div>
+            <div class="author-quote">
+            </div>
+        </div>
+       
+        <nav class="footer-link">
+            <div><a href="https://github.com/EkaterinAutumn" class="nav-link">GitHub</a></div>
+            <div><a href="https://rs.school/js/" class="nav-link">The rolling scopes school</a></div>
+            <div><span class="year-class">2022</span></div>
+        </nav>
+    </footer>
+</body>
+
+</html>
